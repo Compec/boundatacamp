@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+        Boğaziçi DataCamp
+    </title>
+    <meta charset="UTF-8">
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            background: #0C0C0C;
+            color: white;
+            padding: 20px;
+        }
+        body{
+            font-family: 'PT Mono', monospace;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        .btn{
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            display: inline;
+            padding: 12px 24px;
+            font-size: 1.2em;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+        }
+        #c{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            min-height: 600px;
+            color: white;
+        }
+        .header-content{
+            position: relative;
+            text-align: center;
+        }
+        .header-logo{
+            width: 50%;
+            margin-top: 80px;
+        }
+        .header-logo img{
+            width: 100%;
+        }
+        .header-detail-text{
+            padding: 0 10px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 1.2em;
+            margin-bottom: 40px;
+        }
+        .header-image{
+            display: none;
+        }
+        .header-image img{
+            width: 100%;
+        }
+        .why-list{
+            list-style: none;
+            padding-left: 10px;
+            line-height: 1.4em;
+        }
+        .why-list li{
+            padding: 4px 0;
+        }
+        .why-list li:before{
+            font-size: 1.4em;
+            content: '✓';
+            padding: 0 2px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+
+    </nav>
+    <header id="hero">
+        <div class="header-content" id="animation">
+            <canvas id="c"></canvas>
+            <img class="header-logo" src="assets/logo.png">
+            <div class="header-detail-text">
+                <p>17-18 Kasım'da Boğaziçi Üniversitesi Bilişim Kulübü Compec tarafından bu yıl ilk defa düzenlenecek olan Boğaziçi DataCamp'e sen de davetlisin.</p>
+                <p>İki gün boyunca konuşmalarla sektörü "Data Science" açısından teknik olarak tanıyacak ve workshoplarla doğrudan uygulayarak öğrenme fırsatı yakalayacaksın.</p>
+            </div>
+            <div class="header-image">
+                <img src="assets/datacamp_graph_crop.png" style="width:100%;">
+            </div>
+            <div class="btn">
+                <a target="_blank" href="#">Ücretsiz Kaydol</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="why">
+        <div class="why-container">
+            <h2>Nedir</h2>
+            <p>
+                Boğaziçi DataCamp, «data science» alanının günümüzdeki uygulama alanlarının ve
+                geleceğinin tartışıldığı ve katılımcıların uygulayarak öğrenme şansı yakaladıkları iki günlük
+                bir zirvedir. Bu yıl ilk defa düzenlenecektir.
+            </p>
+            <p>
+                Etkinliğimiz hedef kitle olan Bilgisayar Mühendisliği ve diğer ilgili bölümlerden
+                öğrencilerin istekleri göz önünde bulundurularak tasarlanmaktadır. Etkinlik dahilinde
+                konuşmalar teknik anlamda ufuk açma ve iç görü kazandırma işlevi görürken
+                workshoplar uygulayarak öğrenme ve soru sorma imkanı sağlayacaktır.
+            </p>
+            <p>
+                Yer ve zaman
+            </p>
+        </div>
+        <div class="why-container">
+            <h2>Neden Veri Bilimi</h2>
+            <ul class="why-list">
+                <li>
+                    Bilgisayar Mühendisliği başta olmak üzere ilgili bölümlerdeki öğrencilerin ilgi
+                    alanlarının bu yöne kayması ve bu alana dair taleplerinin artması
+                </li>
+                <li>
+                    Teknolojik gelişmelerin yaşandığı ve hayatımızı ve iş modellerini değiştirecek etkiler
+                    ortaya çıkaran bir alan olması
+                </li>
+                <li>
+                    Sektörde veri bilimi üzerine uzmanlaşmış kişilere olan ihtiyacın artması
+                </li>
+                <li>
+                    Geniş ve kapsamlı bir alan olması ve pek çok diğer önemli alanla (Yapay Zeka, Makine
+                    Öğrenmesi gibi) doğrudan ilişkili olması
+                </li>
+            </ul>
+        </div>
+
+    </section>
+    <section id="program">
+        <h2>Program</h2>
+        Yakında açıklanacaktır
+    </section>
+    <section id="partners"></section>
+    <section id="contact">
+        <!-- Harita -->
+        <!-- Ekip iletişim bilgileri-->
+    </section>
+    <footer>
+        <!--   Compec -->
+    </footer>
+    <script>
+        // geting canvas by id c
+        var header = document.getElementById("animation").getBoundingClientRect();
+        var c = document.getElementById("c");
+        var ctx = c.getContext("2d");
+
+        c.height = window.innerHeight;
+        c.width = header.width;
+
+        //chinese characters - taken from the unicode charset
+        //var matrix = "ABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%";
+        var matrix = "01";
+        //converting the string into an array of single characters
+        matrix = matrix.split("");
+
+        var font_size = 12;
+        var columns = c.width/font_size; //number of columns for the rain
+        //an array of drops - one per column
+        var drops = [];
+        //x below is the x coordinate
+        //1 = y co-ordinate of the drop(same for every drop initially)
+        for(var x = 0; x < columns; x++)
+            drops[x] = 1;
+
+        //drawing the characters
+        function draw()
+        {
+            //Black BG for the canvas
+            //translucent BG to show trail
+            ctx.fillStyle = "rgba(0, 0, 0, 0.04)";
+            ctx.fillRect(0, 0, c.width, c.height);
+
+            ctx.fillStyle = "#00907B"; //green text
+            ctx.font = font_size + "px arial";
+            //looping over drops
+            for(var i = 0; i < drops.length; i++)
+            {
+                //a random chinese character to print
+                var text = matrix[Math.floor(Math.random()*matrix.length)];
+                //x = i*font_size, y = value of drops[i]*font_size
+                ctx.fillText(text, i*font_size, drops[i]*font_size);
+
+                //sending the drop back to the top randomly after it has crossed the screen
+                //adding a randomness to the reset to make the drops scattered on the Y axis
+                if(drops[i]*font_size > c.height && Math.random() > 0.975)
+                    drops[i] = 0;
+
+                //incrementing Y coordinate
+                drops[i]++;
+            }
+
+        }
+
+        setInterval(draw, 10);
+
+
+    </script>
+    <script>
+        function resizeCanvas(){
+            header = document.getElementById("animation").getBoundingClientRect();
+            //c.height = header.height;
+            c.width = header.width;
+            c.height = window.innerHeight;
+            columns = c.width/font_size; //number of columns for the rain
+            //an array of drops - one per column
+            drops = [];
+            //x below is the x coordinate
+            //1 = y co-ordinate of the drop(same for every drop initially)
+            for(var x = 0; x < columns; x++)
+                drops[x] = 1;
+        }
+
+        window.addEventListener('resize', resizeCanvas, false);
+    </script>
+
+</body>
+</html>
