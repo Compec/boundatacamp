@@ -25,8 +25,8 @@
         }
         section{
             background: #00836E;
-            color: #E2FFFA;
-            padding: 20px;
+            color: white;
+            padding: 10px;
         }
         body{
             font-family: 'PT Mono', monospace;
@@ -90,6 +90,12 @@
         .header-image img{
             width: 100%;
         }
+        .why-container{
+
+        }
+        .why-container h3{
+            text-decoration: underline;
+        }
         .why-list{
             list-style: none;
             padding-left: 10px;
@@ -102,6 +108,44 @@
             font-size: 1.4em;
             content: '✓';
             padding: 0 2px;
+        }
+        .program-container{
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 15px;
+            border: 8px solid #E2FFFA;
+            margin: 16px 0;
+        }
+        .team-member{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 4px;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 15px;
+            border: 4px solid #E2FFFA;
+        }
+        .team-member .image{
+            width: 30%;
+        }
+        .team-member .image img{
+            width: 80%;
+            margin: 4px 10%;
+            border-radius: 12px;
+        }
+        .team-member .text{
+            width: 70%;
+            box-sizing: border-box;
+            padding-left: 10px;
+        }
+        .team-member .text a{
+            text-decoration: none;
+            color: white;
+        }
+        .map-container{
+            height: 400px;
+            width: 100%;
         }
     </style>
 </head>
@@ -122,53 +166,101 @@
                 <img src="assets/datacamp_graph_crop.png" style="width:100%;">
             </div>
             <div class="btn">
-                <a target="_blank" href="#">Ücretsiz Kaydol</a>
+                <a target="_blank" href="#">Get Your Ticket Free</a>
             </div>
         </div>
     </header>
 
     <section id="why">
         <div class="why-container">
-            <h2>Nedir</h2>
+            <h2>What</h2>
             <p>
-                Boğaziçi DataCamp, «data science» alanının günümüzdeki uygulama alanlarının ve
-                geleceğinin tartışıldığı ve katılımcıların uygulayarak öğrenme şansı yakaladıkları iki günlük
-                bir zirvedir. Bu yıl ilk defa düzenlenecektir.
+                Boğaziçi DataCamp is a two day summit at which the field of data
+                science and its future is discussed and workshops are held where
+                attenders can learn by practicing. It will be organized this year for the first time.
             </p>
+            <h3>Place</h3>
             <p>
-                Yer ve zaman
+                Boğaziçi University <br>
+                New Hall 105 <br>
+                BM B4 (For workshops)
             </p>
+            <h3>Time</h3>
+            <p>
+                17-18 November
+            </p>
+
         </div>
         <div class="why-container">
-            <h2>Neden Veri Bilimi</h2>
+            <h2>For Whom</h2>
+            <p>Boğaziçi DataCamp is designed for you, if</p>
             <ul class="why-list">
                 <li>
-                    Bilgisayar Mühendisliği başta olmak üzere ilgili bölümlerdeki öğrencilerin ilgi
-                    alanlarının bu yöne kayması ve bu alana dair taleplerinin artması
+                    You are a student from the departments like Computer Engineering, Management & Information Systems
+                    in which programing concepts and algorithmic approaches are covered,
+                    <br>
+                    (if you are a professional, still welcome)
                 </li>
                 <li>
-                    Teknolojik gelişmelerin yaşandığı ve hayatımızı ve iş modellerini değiştirecek etkiler
-                    ortaya çıkaran bir alan olması
+                    You desire to make use of "data science" in your projects and career path,
                 </li>
                 <li>
-                    Sektörde veri bilimi üzerine uzmanlaşmış kişilere olan ihtiyacın artması
-                </li>
-                <li>
-                    Geniş ve kapsamlı bir alan olması ve pek çok diğer önemli alanla (Yapay Zeka, Makine
-                    Öğrenmesi gibi) doğrudan ilişkili olması
+                    You are curious what "data science" implies with the related terms Machine Learning, Artificial Intelligence, Image Recognition, etc.
                 </li>
             </ul>
         </div>
 
     </section>
     <section id="program">
-        <h2>Program</h2>
-        Yakında açıklanacaktır
+        <div class="program-container">
+            <h2>Program</h2>
+            Yakında açıklanacaktır
+        </div>
     </section>
     <section id="partners"></section>
     <section id="contact">
         <!-- Harita -->
         <!-- Ekip iletişim bilgileri-->
+        <h3>Contact Us</h3>
+        <div class="team-container">
+            <div class="team-member">
+                <div class="image">
+                    <img src="assets/team/onurcan.png" alt="Onur Can Avcı">
+                </div>
+                <div class="text">
+                    <strong>Onur Can Avcı</strong> <br>
+                    R&D Director <br>
+                    <a href="mailto:onurcan.avci@compec.org" target="_top">onurcan.avci@compec.org</a> <br>
+                    <a href="tel:+905388982028" target="_top">+90 538 898 20 28</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="image">
+                    <img src="assets/team/berkay.png" alt="Berkay Bör">
+                </div>
+                <div class="text">
+                    <strong>Berkay Bör</strong> <br>
+                    Compec Dev-Team Leader <br>
+                    <a href="mailto:berkay.bor07@gmail.com" target="_top">berkay.bor07@gmail.com</a> <br>
+                    <a href="tel:+905309650606" target="_top">+90 530 965 06 06</a>
+                </div>
+            </div>
+            <div class="team-member">
+                <div class="image">
+                    <img src="assets/team/emin.png" alt="Muhammed Emin Deniz">
+                </div>
+                <div class="text">
+                    <strong>Muhammed Emin Deniz</strong> <br>
+                    Compec Dev-Team Leader <br>
+                    <a href="mailto:emindeniz99@gmail.com" target="_top">emindeniz99@gmail.com</a> <br>
+                    <a href="tel:+905364433684" target="_top">+90 536 443 36 84</a>
+                </div>
+            </div>
+        </div>
+        <h3>Boğaziçi University North Campus</h3>
+        <div id="map" class="map-container">
+
+        </div>
     </section>
     <footer>
         <!--   Compec -->
@@ -246,6 +338,28 @@
         }
 
         window.addEventListener('resize', resizeCanvas, false);
+    </script>
+    <script>
+        // Initialize and add the map
+        function initMap() {
+            // The location of Uluru
+            var bm = {lat: 41.086065, lng: 29.043930};
+            var nh = {lat: 41.086613, lng: 29.045489};
+            // The map, centered at Uluru
+            var map = new google.maps.Map(
+                document.getElementById('map'), {zoom: 14, center: bm});
+            // The marker, positioned at Uluru
+            var bm_marker = new google.maps.Marker({position: bm, map: map, label: 'BM', title: 'BM Buillding B (-2th) floor (for workshops)'});
+            var nh_marker = new google.maps.Marker({position: nh, map: map, label: 'NH', title: 'New Hall 105'});
+        }
+    </script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAskF-uLtsMYZ-BveXRd8ov2EaWd0o6mxQ&callback=initMap">
     </script>
 
 </body>
