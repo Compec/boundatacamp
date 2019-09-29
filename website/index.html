@@ -498,14 +498,14 @@
             <canvas id="c"></canvas>
             <div class="header-container">
                 <div class="header-text">
-                    <img class="header-logo" src="assets/logo-19.png">
+                    <img class="header-logo" src="assets/RGB-LogoV5.png">
                     <h1 class="hero-title">Boğaziçi DataCamp'19</h1>
                     <div class="header-detail-text">
                         <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the second time this year.</p>
                         <p>During the summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
                     </div>
                     <div>
-                        <h1>Zirvenin Başlamasına</h1>
+                        <h1>Summit Countdown to November 24, 2019</h1>
                         <h1 id="countdownTimer"></h1>
 
                     </div>
@@ -1054,13 +1054,13 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("countdownTimer").innerHTML = days + " Gün " + hours + " Saat " +
-                minutes + " Dakika " + seconds + " Saniye";
+            document.getElementById("countdownTimer").innerHTML = days + " Days " + hours + " Hours " +
+                minutes + " Minutes " + seconds + " Seconds";
 
             // If the count down is finished, write some text
             if (distance < 0) {
                 clearInterval(x);
-                document.getElementById("countdownTimer").innerHTML = "Etkinlik Başladı";
+                document.getElementById("countdownTimer").innerHTML = "The event started";
             }
         }, 1000);
         // Source: https://www.w3schools.com/howto/howto_js_countdown.asp
