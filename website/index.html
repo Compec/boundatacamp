@@ -504,8 +504,13 @@
                         <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the second time this year.</p>
                         <p>During the summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
                     </div>
+                    <div>
+                        <h1>Zirvenin Başlamasına</h1>
+                        <h1 id="countdownTimer"></h1>
+
+                    </div>
                     <div class="btn">
-                        <a data-scroll href="#register" class="nav-link">Get Your Ticket</a>
+                        <a data-scroll href="#register" class="nav-link">Wait for Registration</a>
                     </div>
                 </div>
                 <div class="header-image">
@@ -808,7 +813,7 @@
     </section>
     <section id="register">
         <div class="container register-container">
-           <h1 style="text-align: center; font-size:30px;">Registeration form will be here soon!!! <br class="br-mobile"> </h1>
+           <h1 style="text-align: center; font-size:30px;">Registration form will be here soon!!! <br class="br-mobile"> </h1>
             <p>You can subscribe to our youtube channel to follow <b>live streams</b> of the event:</p>
             <a target="_blank" href="https://www.youtube.com/channel/UCNo7VY-ZXDgIGF0n2qlH66A">
                 <div class="youtube-btn">
@@ -1028,6 +1033,37 @@
         var scroll = new SmoothScroll('a.nav-link', {
             offset: 80
         });
+    </script>
+    <script>
+        // Set the date we're counting down to
+        var countDownDate = new Date("Nov 24, 2019 09:30:00").getTime();
+
+        // Update the count down every 1 second
+        var x = setInterval(function () {
+
+            // Get today's date and time
+            var now = new Date().getTime();
+
+            // Find the distance between now and the count down date
+            var distance = countDownDate - now;
+
+            // Time calculations for days, hours, minutes and seconds
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            // Display the result in the element with id="demo"
+            document.getElementById("countdownTimer").innerHTML = days + " Gün " + hours + " Saat " +
+                minutes + " Dakika " + seconds + " Saniye";
+
+            // If the count down is finished, write some text
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdownTimer").innerHTML = "Etkinlik Başladı";
+            }
+        }, 1000);
+        // Source: https://www.w3schools.com/howto/howto_js_countdown.asp
     </script>
 </body>
 </html>
