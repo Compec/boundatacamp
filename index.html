@@ -50,7 +50,7 @@
             border: 2px solid white;
             display: inline;
             padding: 12px 24px;
-            font-size: 1.2em;
+            
         }
         .btn a{
             text-decoration: none;
@@ -506,13 +506,18 @@
                     <div class="header-detail-text">
                         <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the second time this year.</p>
                         <p>During the summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
+                       <div style="transform: translateY(10px)">
                         <h3>Countdown to Summit</h3>
                         <h3 id="countdownTimer"></h3>
-                        <h3>Date of summit:  November 24, 2019</h3>
+                        <h3>Date of summit:  November 24</h3>
+                        <div class="btn">
+                            <a data-scroll href="#register" class="nav-link">Wait for Registration</a>
+                        </div>
                     </div>
-                    <div class="btn">
-                        <a data-scroll href="#register" class="nav-link">Wait for Registration</a>
                     </div>
+                </div>
+                <div>
+                    
                 </div>
                 <div class="header-image">
                     <img src="assets/RGB-LogoV6.png" style="width:100%;">
@@ -1036,7 +1041,7 @@
         var c = document.getElementById("c");
         var ctx = c.getContext("2d");
 
-        c.height = window.innerHeight;
+        c.height = window.innerHeight*1.5;
         c.width = header.width;
 
         //chinese characters - taken from the unicode charset
