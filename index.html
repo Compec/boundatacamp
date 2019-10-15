@@ -10,7 +10,7 @@
     <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
     <meta http-equiv="pragma" content="no-cache" />
     <link rel="shortcut icon" type="image/png" href="/assets/logo_icon.png"/>
-
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
 
     <title>
@@ -21,6 +21,10 @@
     <meta charset="UTF-8">
 
     <style>
+        .input-form{
+          padding-top:20px;
+
+        }
         .mailFont{
                 font-size:11px;
             }
@@ -941,6 +945,96 @@
             </div>
         </div>
     </section>
+    <section style="display: none;" id="registrationForm"><!--display:none!ı sil-->
+        <div class="container">
+            <div class="row input-form">
+                    <label for="name">Adınız</label>
+                    <input class="form-control" placeholder="Adınız" type="text" name="name"/>
+            </div>
+            <div class="row input-form">
+                    <label for="surname">Soyadınız</label>
+                    <input class="form-control" placeholder="Soyadınız" type="text" name="surname"/>
+            </div>
+            <div class="row input-form">
+                    <label for="email">Email Adresiniz</label>
+                    <input class="form-control" placeholder="Email Adresiniz" type="text" name="email"/>
+            </div>
+            <div class="row input-form">
+                    <label for="phoneNumber">Telefon Numaranız</label>
+                    <input class="form-control" placeholder="Telefon Numaranız" type="text" name="phoneNumber"/>
+            </div>
+            <div class="row input-form">
+                    <label for="isStudentOrPro">Öğrenci Misiniz, Profesyonel Mi?</label>
+                    <select class="form-control" name="isStudentOrPro">
+                        <option value="" selected disabled>Seçiniz</option>
+                        <option value="student" >Öğrenci</option>
+                        <option value="pro" >Profesyonel</option>
+                    </select>
+            </div>
+            <pop id="pop" style="display:none" >
+            <student id="student" style="display:none">
+                    <div class="row input-form">
+                            <label for="phoneNumber">Peki Boğaziçi Üniversitesi Öğrencisi Misiniz?</label>
+                            <select class="form-control" name="isBoun">
+                                <option value="" selected disabled>Seçiniz</option>
+                                <option value="yes" >Evet</option>
+                                <option value="no" >Diğer</option>
+                            </select>
+                    </div>
+                    <div  id="others" style="display: none;"  class="row input-form">
+                            <label for="school">Okuduğunuz Okul?</label>
+                            <input class="form-control" placeholder="Okuduğunuz Okul" type="text" name="school"/>
+                    </div>
+                    <div class="row input-form">
+                            <label for="school">Bölümünüz</label>
+                            <input class="form-control" placeholder="Bölümünüz" type="text" name="department"/>
+                    </div>
+                    <div class="row input-form">
+                            <label for="grade">Sınıf</label>
+                            <select class="form-control" name="grade">
+                                <option value="" selected disabled>Seçiniz</option>
+                                <option value="" >Hazırlık</option>
+                                <option value="" >1</option>
+                                <option value="" >2</option>
+                                <option value="" >3</option>
+                                <option value="" >4</option>
+                            </select>
+                    </div>
+            </student>
+            <pro id="pro" style="display:none">
+                    <div class="row input-form">
+                            <label for="company">Şirketiniz</label>
+                            <input class="form-control" placeholder="Şirketiniz" type="text" name="company"/>
+                    </div>
+                    <div class="row input-form">
+                            <label for="title">Ünvanınız</label>
+                            <input class="form-control" placeholder="Ünvanınız" type="text" name="title"/>
+                    </div>
+                    <div class="row input-form">
+                            <label for="motivation">Motivasyonunuz</label>
+                            <textarea class="form-control" name="motivation" placeholder="Zirveye katılmanızdaki motivasyonunuz" cols="30" rows="3"></textarea>
+                    </div>
+            </pro>
+            <both>
+                    <div class="row input-form">
+                            <label for="fromWhere">Etkinliği Nereden Duydunuz?</label>
+                            <input class="form-control" placeholder="Etkinliği Nereden Duydunuz?" type="text" name="fromWhere"/>
+                    </div>
+                    <div class="row input-form">
+                            <label for="fromWhere">CV</label>
+                                      <input class="form-control" type="file" >  
+                    </div>
+                    <div class="row input-form">
+                            <submit id="submit" class="btn btn-info">Gönder</submit>
+                    </div>
+                    
+            </both>
+        </pop>
+           
+
+            
+        </div>
+    </section>
     <section id="contact">
         <div class="container container-wide">
             <h3>Contact Us</h3>
@@ -1029,6 +1123,10 @@
         </div>
         <!--   Compec -->
     </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
 
         // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
@@ -1170,6 +1268,57 @@
             }
         }, 1000);
         // Source: https://www.w3schools.com/howto/howto_js_countdown.asp
+    </script>
+    <script>
+    $("select[name='isStudentOrPro']").change(()=>{
+        $("#pop").css("display","unset");
+       if( $("select[name='isStudentOrPro']").val()=="student"){
+        $("#student").css("display","unset");
+        $("#pro").css("display","none");
+
+        
+       }
+       if( $("select[name='isStudentOrPro']").val()=="pro"){
+        $("#pro").css("display","unset");
+        $("#student").css("display","none");
+
+       }
+    });
+    $("select[name='isBoun']").change(()=>{
+        if($("select[name='isBoun']").val()=="yes"){
+            $("#others").css("display","none");
+           
+        }
+        if($("select[name='isBoun']").val()=="no"){
+            $("#others").css("display","block");
+           
+        }
+    });
+
+    $("#submit").click(()=>{
+        var submission;
+        if(true){
+        var submission={
+            name: $("input[name='name']").val(),
+            surname: $("input[name='surname']").val(),
+            email: $("input[name='email']").val(),
+            phoneNumber: $("input[name='phoneNumber']").val(),
+            isStudentOrPro: $("select[name='isStudentOrPro']"),
+            school: $("input[name='school']").val()||"Boğaziçi Üniversitesi",
+            department: $("input[name='department']").val(),
+            grade: $("select[name='grade']").val(),
+            company: $("input[name='company']").val(),
+            title: $("input[name='title']").val(),
+            motivation: $("textarea[name='motivation']").val(),
+            fromWhere: $("input[name='fromWhere']").val(),
+            cvLink: ""
+            
+        }
+        console.log(submission);
+        //google
+
+        }
+    });
     </script>
 </body>
 </html>
