@@ -49,13 +49,13 @@
             display: none;
         }
  
-        .btn{
+        /* .btn{
             background-color: rgba(0, 0, 0, 0.5);
             border: 2px solid white;
             display: inline;
             padding: 12px 24px;
             
-        }
+        } */
         .btn a{
             text-decoration: none;
             color: white;
@@ -514,7 +514,7 @@
                         <h3>Countdown to Summit</h3>
                         <h3 id="countdownTimer"></h3>
                         <h3>Date of summit:  November 24</h3>
-                        <div class="btn">
+                        <div class="btn btn-outline-primary">
                             <a data-scroll href="#register" class="nav-link">Wait for Registration</a>
                         </div>
                     </div>
@@ -993,13 +993,23 @@
                             <label for="grade">Sınıf</label>
                             <select class="form-control" name="grade">
                                 <option value="" selected disabled>Seçiniz</option>
-                                <option value="" >Hazırlık</option>
-                                <option value="" >1</option>
-                                <option value="" >2</option>
-                                <option value="" >3</option>
-                                <option value="" >4</option>
+                                <option value="Hazırlık" >Hazırlık</option>
+                                <option value="1" >1</option>
+                                <option value="2" >2</option>
+                                <option value="3" >3</option>
+                                <option value="4" >4</option>
                             </select>
                     </div>
+                    <div  id="studentMail" style="display: none;"  class="row input-form">
+                        <label for="eduMail">Okul Mail Adresiniz?</label>
+                        <input class="form-control" placeholder="@xyz.edu.tr'li mailiniz" type="text" name="eduMail"/>
+                    </div>
+                    <div class="row input-form">
+                        <label for="motivation">Motivasyonunuz</label>
+                        <textarea class="form-control" name="motivation" placeholder="Zirveye katılmanızdaki motivasyonunuz" cols="30"
+                            rows="3"></textarea>
+                    </div>
+
             </student>
             <pro id="pro" style="display:none">
                     <div class="row input-form">
@@ -1021,8 +1031,33 @@
                             <input class="form-control" placeholder="Etkinliği Nereden Duydunuz?" type="text" name="fromWhere"/>
                     </div>
                     <div class="row input-form">
-                            <label for="fromWhere">CV</label>
-                                      <input class="form-control" type="file" >  
+                            <label>CV ( Maksimum 5 MB ) </label>
+                            <button id="upload_widget" class="cloudinary-button">Upload file</button>
+                            <input class="form-control" id="cvLink" disabled type="text">
+                            
+                            <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
+                            
+                            <script type="text/javascript">
+                                var myWidget = cloudinary.createUploadWidget({
+                                    cloudName: 'dcv9yasyy',
+                                    uploadPreset: 't50dosry',
+                                    multiple: false,
+                                    sources: ["local", "dropbox", "url", "camera",],
+                                    maxFileSize: 12500000
+                                }, (error, result) => {
+                                    if (!error && result && result.event === "success") {
+                                        console.log('Done! Here is the image info: ', result.info);
+                                        document.getElementById("cvLink").value = result.info.secure_url;
+                                    }
+                                }
+                                )
+
+                                document.getElementById("upload_widget").addEventListener("click", function () {
+                                    myWidget.open();
+                                }, false);
+
+                            </script>
+
                     </div>
                     <div class="row input-form">
                             <submit id="submit" class="btn btn-info">Gönder</submit>
@@ -1297,16 +1332,19 @@
 
     $("#submit").click(()=>{
         var submission;
+        console.log($("select[name='grade']"));
+        
         if(true){
         var submission={
             name: $("input[name='name']").val(),
             surname: $("input[name='surname']").val(),
             email: $("input[name='email']").val(),
             phoneNumber: $("input[name='phoneNumber']").val(),
-            isStudentOrPro: $("select[name='isStudentOrPro']"),
+            isStudentOrPro: $("select[name='isStudentOrPro']").val(),
             school: $("input[name='school']").val()||"Boğaziçi Üniversitesi",
             department: $("input[name='department']").val(),
             grade: $("select[name='grade']").val(),
+            studentMail: $("input[name='eduMail']").val(),
             company: $("input[name='company']").val(),
             title: $("input[name='title']").val(),
             motivation: $("textarea[name='motivation']").val(),
