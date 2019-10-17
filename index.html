@@ -938,6 +938,11 @@
             </div>
         </div>
     </section>
+    <section>
+        <div class="container">
+            
+        </div>
+    </section>
     <section style="display: none;" id="registrationForm"><!--display:none!ı sil-->
         <div class="container">
             <div class="row input-form">
@@ -993,9 +998,9 @@
                                 <option value="4" >4</option>
                             </select>
                     </div>
-                    <div  id="studentMail" style="display: none;"  class="row input-form">
+                    <div  id="studentMail" class="row input-form">
                         <label for="eduMail">Okul Mail Adresiniz?</label>
-                        <input class="form-control" placeholder="@xyz.edu.tr'li mailiniz" type="text" name="eduMail"/>
+                        <input class="form-control" name="eduMail" placeholder="@xyz.edu.tr'li mailiniz" type="text"/>
                     </div>
                     <div class="row input-form">
                         <label for="motivation">Motivasyonunuz</label>
@@ -1024,8 +1029,8 @@
                             <input class="form-control" placeholder="Etkinliği Nereden Duydunuz?" type="text" name="fromWhere"/>
                     </div>
                     <div class="row input-form">
-                            <label>CV ( Maksimum 5 MB ) </label>
-                            <button id="upload_widget" class="cloudinary-button">Upload file</button>
+                            <label>CV ( Maksimum 5 MB ) ( Opsiyonel ) </label>
+                            <button id="upload_widget" class="button btn-primary">Upload file</button>
                             <input class="form-control" id="cvLink" disabled type="text">
                             
                             <script src="https://widget.cloudinary.com/v2.0/global/all.js" type="text/javascript"></script>
@@ -1052,8 +1057,19 @@
                             </script>
 
                     </div>
+                    <div class="row custom-control custom-checkbox">
+                           
+                        <input type="checkbox" class="custom-control-input" id="cvAccept">
+                        <label class="custom-control-label" for="cvAccept">Bilgilerimin staj/iş ilanı gibi amaçlar için paylaşılmasını onaylıyorum.</label>
+                        
+                        
+                    </div>
                     <div class="row input-form">
-                            <submit id="submit" class="btn btn-info">Gönder</submit>
+                        <label for="promotion">Promosyon Kodu</label>
+                        <input class="form-control" placeholder="Promosyon Kodunuz" type="text" name="promotion"/>
+                    </div>
+                    <div class="row input-form">
+                            <submit id="submit" class="btn btn-primary">Gönder</submit>
                     </div>
                     
             </both>
@@ -1325,11 +1341,9 @@
     });
 
     $("#submit").click(()=>{
-        var submission;
-        console.log($("select[name='grade']"));
-        
+    
         if(true){
-        var submission={
+        var res={
             name: $("input[name='name']").val(),
             surname: $("input[name='surname']").val(),
             email: $("input[name='email']").val(),
@@ -1337,18 +1351,40 @@
             isStudentOrPro: $("select[name='isStudentOrPro']").val(),
             school: $("input[name='school']").val()||"Boğaziçi Üniversitesi",
             department: $("input[name='department']").val(),
-            grade: $("select[name='grade']").val(),
+            grade: $("select[name='grade']").val()||"",
             studentMail: $("input[name='eduMail']").val(),
             company: $("input[name='company']").val(),
             title: $("input[name='title']").val(),
             motivation: $("textarea[name='motivation']").val(),
             fromWhere: $("input[name='fromWhere']").val(),
-            cvLink: ""
+            cvLink: $("input[id='cvLink']").val(),
+            promotion: $("input[name='promotion']").val(),
+            cvAccept: $("input[id='cvAccept']").is(":checked")
+
             
         }
-        console.log(submission);
-        //google
+        console.log(res);
+                
+        let asd="http://datacampapi.dev.compec.org/datacampkayit?usp=pp_url"+
+        "&entry.1140033869="+res.name+
+        "&entry.1139239116="+res.surname+
+        "&entry.1454259181="+res.email+
+        "&entry.1994037736="+res.phoneNumber+
+        "&entry.1620204294="+res.isStudentOrPro+
+        "&entry.226554650="+res.school+
+        "&entry.1614710481="+res.studentMail+
+        "&entry.201698158="+res.department+
+        "&entry.1809406643="+res.company+
+        "&entry.958475025="+res.title+
+        "&entry.358539857="+res.grade+
+        "&entry.815516015="+res.motivation+
+        "&entry.1629977891="+res.fromWhere+
+        "&entry.857178308="+res.cvLink+
+        "&entry.962990275="+res.promotion+
+        "&entry.1465925335="+res.cvAccept+
+        "&submit=Submit"
 
+        fetch(encodeURI(asd))
         }
     });
     </script>
