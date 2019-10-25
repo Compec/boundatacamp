@@ -19,6 +19,7 @@
     <link rel="shortcut icon" type="image/png" href="/assets/logo_icon.png"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="/styles.css"/>
     <title>
         Boğaziçi DataCamp '19
@@ -808,6 +809,12 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                         <input class="form-control" placeholder="Promosyon Kodunuz" type="text" name="promotion"/>
                     </div>
                     <div class="row input-form">
+                        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+                
+                        <div class="g-recaptcha" data-sitekey="6LfpgL8UAAAAAEZ9kOYVtQ0UjOEWPEqmwYF-CawO"></div>
+                    </div>
+                    
+                    <div class="row input-form">  
                             <submit id="submit" class="btn btn-primary">Gönder</submit>
                     </div>
                     
@@ -1131,9 +1138,13 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         "&entry.857178308="+res.cvLink+
         "&entry.962990275="+res.promotion+
         "&entry.1465925335="+res.cvAccept+
-        "&submit=Submit"
+        "&submit=Submit"+
+        "&recaptcha="+grecaptcha.getResponse()
 
-        fetch(encodeURI(asd))
+        axios.get(encodeURI(asd)).then(res=>{
+            grecaptcha.reset();
+            alert(res.data.responseDesc)
+        })
         }
     });
     </script>
