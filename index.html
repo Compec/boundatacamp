@@ -82,14 +82,14 @@
                     <img class="header-logo" src="assets/RGB-LogoV5.png">
                     <h1 class="hero-title">Boğaziçi DataCamp'19</h1>
                     <div class="header-detail-text">
-                        <p>You are invited to Boğaziçi DataCamp organized by Boğaziçi University IT Club Compec for the second time this year.</p>
-                        <p>During the summit, with talks, you will recognize the business applications of data science with a technical approach and practice them in workshops.</p>
+                        <p>Boğaziçi Üniversitesi Bilişim Kulübü Compec tarafından düzenlenen ve bu sene ikinci kez gerçeklesecek olan Boğaziçi DataCamp’e davetlisiniz!</p>
+                        <p>Zirve boyunca veri biliminin iş dünyasında ki güncel uygulamalarını tanırken, workshoplar sırasında uygulamalarını deneyimleyebilceksiniz.</p>
                        <div style="transform: translateY(10px)">
-                        <h3>Countdown to Summit</h3>
+                        <h3>Zirveye Kalan Süre</h3>
                         <h3 id="countdownTimer"></h3>
-                        <h3>Date of summit:  November 24</h3>
+                        <h3>Zirve Tarihi:  24 Kasım</h3>
                         <div class="btn btn-outline-primary">
-                            <a data-scroll href="#register" class="nav-link">Wait for Registration</a>
+                            <a data-scroll href="#register" class="nav-link">Kayıt için Tıkla!</a>
                         </div>
                     </div>
                     </div>
@@ -108,38 +108,35 @@
     <section id="about">
         <div class="container container-wide">
             <div class="why-container">
-                <h2>What</h2>
+                <h2>Boğaziçi DataCamp Nedir?</h2>
                 <p>
-                    Boğaziçi DataCamp is a summit at which the field of data
-                    science with its business applications is discussed via talks and workshops are held where
-                    attenders can learn by practicing. It will be organized for the second time by Boğaziçi University IT Club Compec this year.
-                </p>
-                <h3>Place</h3>
+                    Boğaziçi Datacamp veri bilimi ve onun iş dünyasındaki uygulamalarının konuşması ve katılımcıların workshoplarla uygulayarak öğrenmesi üzerine olan bir zirvedir.  </p>
+                <h3>Yer</h3>
                 <p>
-                    Boğaziçi University <br>
+                    Boğaziçi Universitesi <br>
                     Albert Long Hall
                 </p>
-                <h3>Time</h3>
+                <h3>Tarih</h3>
                 <p>
-                    24 November
+                    24 Kasım
                 </p>
 
             </div>
             <div class="why-container">
-                <h2>For Whom</h2>
+                <h2>Kimler için?</h2>
                 <p>Boğaziçi DataCamp is designed for you, if</p>
                 <ul class="why-list">
                     <li>
-                        You are a student from the departments like Computer Engineering, Management & Information Systems
-                        in which programing concepts and algorithmic approaches are covered,
-                        <br>
-                        (if you are a professional, still welcome)
+                        Programlama konseptleri ve algoritmik yaklaşımların bulunduğu Bilgisayar Mühendisliği ve Yönetim Bilişim Sistemi öğrencileri,
+                    
                     </li>
                     <li>
-                        You desire to make use of "data science" in your projects and career path,
+                        Veri Bilimi ile ilgili profesyoneller
                     </li>
                     <li>
-                        You are curious what "data science" implies with the related terms Machine Learning, Artificial Intelligence, Image Recognition, etc.
+                        Veri Bilimi’ni projeler ile kariyerinde kullanmak isteyenler </li>
+                    <li>
+                        Makine Öğrenmesi, Yapay Zeka, Resim Tanıma, vb. gibi Veri Bilimi ile ilişkili terimlerin ne kastettiğini merak edenler içindir.
                     </li>
                 </ul>
             </div>
@@ -456,7 +453,7 @@
         </div>
     </section>
 
-<stage style="display: none;">
+<stage id="registerAll" style="display:unset">
 
     <section>
         <div class="container container-wide">
@@ -687,23 +684,23 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
             <h4>Kayıt Formu</h4>
             <div class="row input-form">
                     <label for="name">Adınız</label>
-                    <input class="form-control" placeholder="Adınız" type="text" name="name"/>
+                    <input id="name" class="form-control validation" placeholder="Adınız" type="text" name="name"/>
             </div>
             <div class="row input-form">
                     <label for="surname">Soyadınız</label>
-                    <input class="form-control" placeholder="Soyadınız" type="text" name="surname"/>
+                    <input id="surname" class="form-control validation" placeholder="Soyadınız" type="text" name="surname"/>
             </div>
             <div class="row input-form">
                     <label for="email">Email Adresiniz</label>
-                    <input class="form-control" placeholder="Email Adresiniz" type="text" name="email"/>
+                    <input id="email" class="form-control validation" placeholder="Email Adresiniz" type="text" name="email"/>
             </div>
             <div class="row input-form">
                     <label for="phoneNumber">Telefon Numaranız</label>
-                    <input class="form-control" placeholder="Telefon Numaranız" type="text" name="phoneNumber"/>
+                    <input id="phoneNumber" class="form-control validation" placeholder="Telefon Numaranız" type="text" name="phoneNumber"/>
             </div>
             <div class="row input-form">
                     <label for="isStudentOrPro">Öğrenci Misiniz, Profesyonel Mi?</label>
-                    <select class="form-control" name="isStudentOrPro">
+                    <select id="isStudentOrPro" class="form-control validation" name="isStudentOrPro">
                         <option value="" selected disabled>Seçiniz</option>
                         <option value="student" >Öğrenci</option>
                         <option value="pro" >Profesyonel</option>
@@ -826,6 +823,11 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         </div>
     </section>
 
+</stage>
+<stage id="responseDiv" class="container" style="display: none;">
+    <section>
+    <h2>Kayıdınız için teşekkürler. Gelen Mail ve Smsteki yönergeleri takip ederek ödemenizi ve başvurunuzu tamamlayabilirsiniz.</h2>
+</section>
 </stage>
 
     <section id="contact">
@@ -1059,8 +1061,8 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
             // Display the result in the element with id="demo"
-            document.getElementById("countdownTimer").innerHTML = days + " Days " + hours + " Hours " +
-                minutes + " Minutes " + seconds + " Seconds";
+            document.getElementById("countdownTimer").innerHTML = days + " Gün " + hours + " Saat " +
+                minutes + " Dakika " + seconds + " Saniye";
 
             // If the count down is finished, write some text
             if (distance < 0) {
@@ -1097,8 +1099,18 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
     });
 
     $("#submit").click(()=>{
-    
-        if(true){
+        var validationInputs = document.getElementsByClassName("validation");
+        var isReady = true;
+        for (let i = 0; i < validationInputs.length; i++) {
+                if (validationInputs[i].value === "") {
+                    $("#" + validationInputs[i].id).addClass("formError");
+                    isReady = false;
+                }
+                else {
+                    $("#" + validationInputs[i].id).removeClass("formError");
+                }
+        }
+        if(isReady){
         var res={
             name: $("input[name='name']").val(),
             surname: $("input[name='surname']").val(),
@@ -1142,9 +1154,14 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         "&recaptcha="+grecaptcha.getResponse()
 
         axios.get(encodeURI(asd)).then(res=>{
+            
+            if(res.statusText=="OK")  $("#registerAll").css("display","none"); $("#responseDiv").css("display","unset"); 
             grecaptcha.reset();
             alert(res.data.responseDesc)
         })
+        }
+        else{
+            alert("eksik verileri giriniz.");
         }
     });
     </script>

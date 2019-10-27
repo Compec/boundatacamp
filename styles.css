@@ -1,3 +1,20 @@
+.formError{
+    border-color: #ff0000 !important;
+    border: 2.5 px solid;
+}
+.card{
+    border-radius: 1rem;
+    
+}
+.bg-success{
+    background-color: #2dd654b4!important;
+}
+.bg-primary{
+    background-color: #007bffb4!important;
+}
+.bg-info{
+    background-color: #17a2b8b4!important;
+}
 .input-form{
     padding-top:20px;
 
@@ -211,6 +228,7 @@
       text-align: center;
   }
   .register-container .instagram-btn{
+      font-size:20px;
       margin: 20px auto;
       padding: 20px;
       width: 200px;
