@@ -17,9 +17,17 @@
     >
     <meta name="keywords" content="boun,bogazici,datacamp,data,science,summit,analytics,and,digital,workshop,business,boğaziçi,camp,veri,bilimi,zirvesi,türkiye,istanbul,en,iyi">
     <link rel="shortcut icon" type="image/png" href="/assets/logo_icon.png"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+ 
+
+    
+    
     <link rel="stylesheet" href="/styles.css"/>
     <title>
         Boğaziçi DataCamp '19
@@ -75,6 +83,7 @@
         </div>
     </nav>
     <header id="hero">
+        
         <div class="header-content clearfix" id="animation">
             <canvas id="c"></canvas>
             <div class="header-container">
@@ -453,7 +462,7 @@
         </div>
     </section>
 
-<stage id="registerAll" style="display:none">
+<stage id="registerAll" style="">
 
     <section>
         <div class="container container-wide">
@@ -710,24 +719,240 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
             <student id="student" style="display:none">
                     <div class="row input-form">
                             <label for="phoneNumber">Peki Boğaziçi Üniversitesi Öğrencisi Misiniz?</label>
-                            <select class="form-control" name="isBoun">
+                            <select class="form-control validationStudent" id="isBoun" name="isBoun">
                                 <option value="" selected disabled>Seçiniz</option>
                                 <option value="yes" >Evet</option>
                                 <option value="no" >Diğer</option>
                             </select>
                     </div>
                     <div  id="others" style="display: none;"  class="row input-form">
-                            <label for="school">Okuduğunuz Okul?</label>
-                            <input class="form-control" placeholder="Okuduğunuz Okul" type="text" name="school"/>
+                            <label for="school">Okuduğunuz Okul? (Listede bulamamanız durumunda "Diğer" seçeneğini seçin)</label>
+                           <!--<input class="form-control" placeholder="Okuduğunuz Okul" type="text" name="school"/>--> 
+                            
+                           <select class="form-control selectpicker validationStudent1" data-live-search="true" id="school" name = "school">
+                                <option value="" selected disabled>Seçiniz</option>   
+                                <option value="Diğer"  >Diğer</option>   
+
+                            <option value="Adana Bilim Ve Teknoloji Üniversitesi" data-tokens="adana bilim ve teknoloji üniversitesi">Adana Bilim Ve Teknoloji Üniversitesi</option>
+                                <option value="Çukurova Üniversitesi" data-tokens="çukurova üniversitesi">Çukurova Üniversitesi</option>
+                                <option value="Adiyaman Üniversitesi" data-tokens="adiyaman üniversitesi">Adiyaman Üniversitesi</option>
+                                <option value="Afyon Kocatepe Üniversitesi" data-tokens="afyon kocatepe üniversitesi">Afyon Kocatepe Üniversitesi</option>
+                                <option value="Afyonkarahisar Sağlik Bilimleri Üniversitesi" data-tokens="afyonkarahisar sağlik bilimleri üniversitesi">Afyonkarahisar Sağlik Bilimleri Üniversitesi</option>
+                                <option value="Ağri Ibrahim Çeçen Üniversitesi" data-tokens="ağri ibrahim çeçen üniversitesi">Ağri Ibrahim Çeçen Üniversitesi</option>
+                                <option value="Amasya Üniversitesi" data-tokens="amasya üniversitesi">Amasya Üniversitesi</option>
+                                <option value="Anka Teknoloji Üniversitesi" data-tokens="anka teknoloji üniversitesi">Anka Teknoloji Üniversitesi</option>
+                                <option value="Ankara Haci Bayram Veli Üniversitesi" data-tokens="ankara haci bayram veli üniversitesi">Ankara Haci Bayram Veli Üniversitesi</option>
+                                <option value="Ankara Medipol Üniversitesi" data-tokens="ankara medipol üniversitesi">Ankara Medipol Üniversitesi</option>
+                                <option value="Ankara Müzik Ve Güzel Sanatlar Üniversitesi" data-tokens="ankara müzik ve güzel sanatlar üniversitesi">Ankara Müzik Ve Güzel Sanatlar Üniversitesi</option>
+                                <option value="Ankara Sosyal Bilimler Üniversitesi" data-tokens="ankara sosyal bilimler üniversitesi">Ankara Sosyal Bilimler Üniversitesi</option>
+                                <option value="Ankara Üniversitesi" data-tokens="ankara üniversitesi">Ankara Üniversitesi</option>
+                                <option value="Ankara Yildirim Beyazit Üniversitesi" data-tokens="ankara yildirim beyazit üniversitesi">Ankara Yildirim Beyazit Üniversitesi</option>
+                                <option value="Atilim Üniversitesi" data-tokens="atilim üniversitesi">Atilim Üniversitesi</option>
+                                <option value="Başkent Üniversitesi" data-tokens="başkent üniversitesi">Başkent Üniversitesi</option>
+                                <option value="Çankaya Üniversitesi" data-tokens="çankaya üniversitesi">Çankaya Üniversitesi</option>
+                                <option value="Gazi Üniversitesi" data-tokens="gazi üniversitesi">Gazi Üniversitesi</option>
+                                <option value="Hacettepe Üniversitesi" data-tokens="hacettepe üniversitesi">Hacettepe Üniversitesi</option>
+                                <option value="Ihsan Doğramaci Bilkent Üniversitesi" data-tokens="ihsan doğramaci bilkent üniversitesi">Ihsan Doğramaci Bilkent Üniversitesi</option>
+                                <option value="Lokman Hekim Üniversitesi" data-tokens="lokman hekim üniversitesi">Lokman Hekim Üniversitesi</option>
+                                <option value="Orta Doğu Teknik Üniversitesi" data-tokens="orta doğu teknik üniversitesi">Orta Doğu Teknik Üniversitesi</option>
+                                <option value="Ostim Teknik Üniversitesi" data-tokens="ostim teknik üniversitesi">Ostim Teknik Üniversitesi</option>
+                                <option value="Ted Üniversitesi" data-tokens="ted üniversitesi">Ted Üniversitesi</option>
+                                <option value="Tobb Ekonomi Ve Teknoloji Üniversitesi" data-tokens="tobb ekonomi ve teknoloji üniversitesi">Tobb Ekonomi Ve Teknoloji Üniversitesi</option>
+                                <option value="Türk Hava Kurumu Üniversitesi" data-tokens="türk hava kurumu üniversitesi">Türk Hava Kurumu Üniversitesi</option>
+                                <option value="Ufuk Üniversitesi" data-tokens="ufuk üniversitesi">Ufuk Üniversitesi</option>
+                                <option value="Yüksek Ihtisas Üniversitesi" data-tokens="yüksek ihtisas üniversitesi">Yüksek Ihtisas Üniversitesi</option>
+                                <option value="Akdeniz Üniversitesi" data-tokens="akdeniz üniversitesi">Akdeniz Üniversitesi</option>
+                                <option value="Alanya Alaaddin Keykubat Üniversitesi" data-tokens="alanya alaaddin keykubat üniversitesi">Alanya Alaaddin Keykubat Üniversitesi</option>
+                                <option value="Alanya Hamdullah Emin Paşa Üniversitesi" data-tokens="alanya hamdullah emin paşa üniversitesi">Alanya Hamdullah Emin Paşa Üniversitesi</option>
+                                <option value="Antalya Akev Üniversitesi" data-tokens="antalya akev üniversitesi">Antalya Akev Üniversitesi</option>
+                                <option value="Antalya Bilim Üniversitesi" data-tokens="antalya bilim üniversitesi">Antalya Bilim Üniversitesi</option>
+                                <option value="Artvin Çoruh Üniversitesi" data-tokens="artvin çoruh üniversitesi">Artvin Çoruh Üniversitesi</option>
+                                <option value="Aydin Adnan Menderes Üniversitesi" data-tokens="aydin adnan menderes üniversitesi">Aydin Adnan Menderes Üniversitesi</option>
+                                <option value="Balikesir Üniversitesi" data-tokens="balikesir üniversitesi">Balikesir Üniversitesi</option>
+                                <option value="Bandirma Onyedi Eylül Üniversitesi" data-tokens="bandirma onyedi eylül üniversitesi">Bandirma Onyedi Eylül Üniversitesi</option>
+                                <option value="Bilecik Şeyh Edebali Üniversitesi" data-tokens="bilecik şeyh edebali üniversitesi">Bilecik Şeyh Edebali Üniversitesi</option>
+                                <option value="Bingöl Üniversitesi" data-tokens="bingöl üniversitesi">Bingöl Üniversitesi</option>
+                                <option value="Bitlis Eren Üniversitesi" data-tokens="bitlis eren üniversitesi">Bitlis Eren Üniversitesi</option>
+                                <option value="Bolu Abant Izzet Baysal Üniversitesi" data-tokens="bolu abant izzet baysal üniversitesi">Bolu Abant Izzet Baysal Üniversitesi</option>
+                                <option value="Burdur Mehmet Akif Ersoy Üniversitesi" data-tokens="burdur mehmet akif ersoy üniversitesi">Burdur Mehmet Akif Ersoy Üniversitesi</option>
+                                <option value="Bursa Teknik Üniversitesi" data-tokens="bursa teknik üniversitesi">Bursa Teknik Üniversitesi</option>
+                                <option value="Bursa Uludağ Üniversitesi" data-tokens="bursa uludağ üniversitesi">Bursa Uludağ Üniversitesi</option>
+                                <option value="Faruk Saraç Tasarim Meslek Yüksekokulu" data-tokens="faruk saraç tasarim meslek yüksekokulu">Faruk Saraç Tasarim Meslek Yüksekokulu</option>
+                                <option value="Çanakkale Onsekiz Mart Üniversitesi" data-tokens="çanakkale onsekiz mart üniversitesi">Çanakkale Onsekiz Mart Üniversitesi</option>
+                                <option value="Çankiri Karatekin Üniversitesi" data-tokens="çankiri karatekin üniversitesi">Çankiri Karatekin Üniversitesi</option>
+                                <option value="Hitit Üniversitesi" data-tokens="hitit üniversitesi">Hitit Üniversitesi</option>
+                                <option value="Pamukkale Üniversitesi" data-tokens="pamukkale üniversitesi">Pamukkale Üniversitesi</option>
+                                <option value="Dicle Üniversitesi" data-tokens="dicle üniversitesi">Dicle Üniversitesi</option>
+                                <option value="Trakya Üniversitesi" data-tokens="trakya üniversitesi">Trakya Üniversitesi</option>
+                                <option value="Firat Üniversitesi" data-tokens="firat üniversitesi">Firat Üniversitesi</option>
+                                <option value="Erzincan Binali Yildirim Üniversitesi" data-tokens="erzincan binali yildirim üniversitesi">Erzincan Binali Yildirim Üniversitesi</option>
+                                <option value="Atatürk Üniversitesi" data-tokens="atatürk üniversitesi">Atatürk Üniversitesi</option>
+                                <option value="Erzurum Teknik Üniversitesi" data-tokens="erzurum teknik üniversitesi">Erzurum Teknik Üniversitesi</option>
+                                <option value="Anadolu Üniversitesi" data-tokens="anadolu üniversitesi">Anadolu Üniversitesi</option>
+                                <option value="Eskişehir Osmangazi Üniversitesi" data-tokens="eskişehir osmangazi üniversitesi">Eskişehir Osmangazi Üniversitesi</option>
+                                <option value="Eskişehir Teknik Üniversitesi" data-tokens="eskişehir teknik üniversitesi">Eskişehir Teknik Üniversitesi</option>
+                                <option value="Gaziantep Bilim Ve Teknoloji Üniversitesi" data-tokens="gaziantep bilim ve teknoloji üniversitesi">Gaziantep Bilim Ve Teknoloji Üniversitesi</option>
+                                <option value="Gaziantep Üniversitesi" data-tokens="gaziantep üniversitesi">Gaziantep Üniversitesi</option>
+                                <option value="Hasan Kalyoncu Üniversitesi" data-tokens="hasan kalyoncu üniversitesi">Hasan Kalyoncu Üniversitesi</option>
+                                <option value="Sanko Üniversitesi" data-tokens="sanko üniversitesi">Sanko Üniversitesi</option>
+                                <option value="Giresun Üniversitesi" data-tokens="giresun üniversitesi">Giresun Üniversitesi</option>
+                                <option value="Gümüşhane Üniversitesi" data-tokens="gümüşhane üniversitesi">Gümüşhane Üniversitesi</option>
+                                <option value="Hakkari Üniversitesi" data-tokens="hakkari üniversitesi">Hakkari Üniversitesi</option>
+                                <option value="Hatay Mustafa Kemal Üniversitesi" data-tokens="hatay mustafa kemal üniversitesi">Hatay Mustafa Kemal Üniversitesi</option>
+                                <option value="Iskenderun Teknik Üniversitesi" data-tokens="iskenderun teknik üniversitesi">Iskenderun Teknik Üniversitesi</option>
+                                <option value="Isparta Uygulamali Bilimler Üniversitesi" data-tokens="isparta uygulamali bilimler üniversitesi">Isparta Uygulamali Bilimler Üniversitesi</option>
+                                <option value="Süleyman Demirel Üniversitesi" data-tokens="süleyman demirel üniversitesi">Süleyman Demirel Üniversitesi</option>
+                                <option value="Çağ Üniversitesi" data-tokens="çağ üniversitesi">Çağ Üniversitesi</option>
+                                <option value="Mersin Üniversitesi" data-tokens="mersin üniversitesi">Mersin Üniversitesi</option>
+                                <option value="Tarsus Üniversitesi" data-tokens="tarsus üniversitesi">Tarsus Üniversitesi</option>
+                                <option value="Toros Üniversitesi" data-tokens="toros üniversitesi">Toros Üniversitesi</option>
+                                <option value="Acibadem Mehmet Ali Aydinlar Üniversitesi" data-tokens="acibadem mehmet ali aydinlar üniversitesi">Acibadem Mehmet Ali Aydinlar Üniversitesi</option>
+                                <option value="Altinbaş Üniversitesi" data-tokens="altinbaş üniversitesi">Altinbaş Üniversitesi</option>
+                                <option value="Ataşehir Adigüzel Meslek Yüksekokulu" data-tokens="ataşehir adigüzel meslek yüksekokulu">Ataşehir Adigüzel Meslek Yüksekokulu</option>
+                                <option value="Avrupa Meslek Yüksekokulu" data-tokens="avrupa meslek yüksekokulu">Avrupa Meslek Yüksekokulu</option>
+                                <option value="Bahçeşehir Üniversitesi" data-tokens="bahçeşehir üniversitesi">Bahçeşehir Üniversitesi</option>
+                                <option value="Beykent Üniversitesi" data-tokens="beykent üniversitesi">Beykent Üniversitesi</option>
+                                <option value="Beykoz Üniversitesi" data-tokens="beykoz üniversitesi">Beykoz Üniversitesi</option>
+                                <option value="Bezm-I Âlem Vakif Üniversitesi" data-tokens="bezm-i âlem vakif üniversitesi">Bezm-I Âlem Vakif Üniversitesi</option>
+                                <option value="Biruni Üniversitesi" data-tokens="biruni üniversitesi">Biruni Üniversitesi</option>
+                                <option value="Boğaziçi Üniversitesi" data-tokens="boğaziçi üniversitesi">Boğaziçi Üniversitesi</option>
+                                <option value="Doğuş Üniversitesi" data-tokens="doğuş üniversitesi">Doğuş Üniversitesi</option>
+                                <option value="Fatih Sultan Mehmet Vakif Üniversitesi" data-tokens="fatih sultan mehmet vakif üniversitesi">Fatih Sultan Mehmet Vakif Üniversitesi</option>
+                                <option value="Fenerbahçe Üniversitesi" data-tokens="fenerbahçe üniversitesi">Fenerbahçe Üniversitesi</option>
+                                <option value="Galatasaray Üniversitesi" data-tokens="galatasaray üniversitesi">Galatasaray Üniversitesi</option>
+                                <option value="Haliç Üniversitesi" data-tokens="haliç üniversitesi">Haliç Üniversitesi</option>
+                                <option value="Işik Üniversitesi" data-tokens="işik üniversitesi">Işik Üniversitesi</option>
+                                <option value="Ibn Haldun Üniversitesi" data-tokens="ibn haldun üniversitesi">Ibn Haldun Üniversitesi</option>
+                                <option value="Istanbul Arel Üniversitesi" data-tokens="istanbul arel üniversitesi">Istanbul Arel Üniversitesi</option>
+                                <option value="Istanbul Atlas Üniversitesi" data-tokens="istanbul atlas üniversitesi">Istanbul Atlas Üniversitesi</option>
+                                <option value="Istanbul Aydin Üniversitesi" data-tokens="istanbul aydin üniversitesi">Istanbul Aydin Üniversitesi</option>
+                                <option value="Istanbul Ayvansaray Üniversitesi" data-tokens="istanbul ayvansaray üniversitesi">Istanbul Ayvansaray Üniversitesi</option>
+                                <option value="Istanbul Bilgi Üniversitesi" data-tokens="istanbul bilgi üniversitesi">Istanbul Bilgi Üniversitesi</option>
+                                <option value="Istanbul Bilim Üniversitesi" data-tokens="istanbul bilim üniversitesi">Istanbul Bilim Üniversitesi</option>
+                                <option value="Istanbul Esenyurt Üniversitesi" data-tokens="istanbul esenyurt üniversitesi">Istanbul Esenyurt Üniversitesi</option>
+                                <option value="Istanbul Gedik Üniversitesi" data-tokens="istanbul gedik üniversitesi">Istanbul Gedik Üniversitesi</option>
+                                <option value="Istanbul Gelişim Üniversitesi" data-tokens="istanbul gelişim üniversitesi">Istanbul Gelişim Üniversitesi</option>
+                                <option value="Istanbul Kent Üniversitesi" data-tokens="istanbul kent üniversitesi">Istanbul Kent Üniversitesi</option>
+                                <option value="Istanbul Kültür Üniversitesi" data-tokens="istanbul kültür üniversitesi">Istanbul Kültür Üniversitesi</option>
+                                <option value="Istanbul Medeniyet Üniversitesi" data-tokens="istanbul medeniyet üniversitesi">Istanbul Medeniyet Üniversitesi</option>
+                                <option value="Istanbul Medipol Üniversitesi" data-tokens="istanbul medipol üniversitesi">Istanbul Medipol Üniversitesi</option>
+                                <option value="Istanbul Okan Üniversitesi" data-tokens="istanbul okan üniversitesi">Istanbul Okan Üniversitesi</option>
+                                <option value="Istanbul Rumeli Üniversitesi" data-tokens="istanbul rumeli üniversitesi">Istanbul Rumeli Üniversitesi</option>
+                                <option value="Istanbul Sabahattin Zaim Üniversitesi" data-tokens="istanbul sabahattin zaim üniversitesi">Istanbul Sabahattin Zaim Üniversitesi</option>
+                                <option value="Istanbul Şehir Üniversitesi" data-tokens="istanbul şehir üniversitesi">Istanbul Şehir Üniversitesi</option>
+                                <option value="Istanbul Şişli Meslek Yüksekokulu" data-tokens="istanbul şişli meslek yüksekokulu">Istanbul Şişli Meslek Yüksekokulu</option>
+                                <option value="Istanbul Teknik Üniversitesi" data-tokens="istanbul teknik üniversitesi">Istanbul Teknik Üniversitesi</option>
+                                <option value="Istanbul Ticaret Üniversitesi" data-tokens="istanbul ticaret üniversitesi">Istanbul Ticaret Üniversitesi</option>
+                                <option value="Istanbul Üniversitesi" data-tokens="istanbul üniversitesi">Istanbul Üniversitesi</option>
+                                <option value="Istanbul Üniversitesi - Cerrahpaşa" data-tokens="istanbul üniversitesi - cerrahpaşa">Istanbul Üniversitesi - Cerrahpaşa</option>
+                                <option value="Istanbul Yeni Yüzyil Üniversitesi" data-tokens="istanbul yeni yüzyil üniversitesi">Istanbul Yeni Yüzyil Üniversitesi</option>
+                                <option value="Istanbul 29 Mayis Üniversitesi" data-tokens="istanbul 29 mayis üniversitesi">Istanbul 29 Mayis Üniversitesi</option>
+                                <option value="Istinye Üniversitesi" data-tokens="istinye üniversitesi">Istinye Üniversitesi</option>
+                                <option value="Izmir Kavram Meslek Yüksekokulu" data-tokens="izmir kavram meslek yüksekokulu">Izmir Kavram Meslek Yüksekokulu</option>
+                                <option value="Kadir Has Üniversitesi" data-tokens="kadir has üniversitesi">Kadir Has Üniversitesi</option>
+                                <option value="Koç Üniversitesi" data-tokens="koç üniversitesi">Koç Üniversitesi</option>
+                                <option value="Maltepe Üniversitesi" data-tokens="maltepe üniversitesi">Maltepe Üniversitesi</option>
+                                <option value="Marmara Üniversitesi" data-tokens="marmara üniversitesi">Marmara Üniversitesi</option>
+                                <option value="Mef Üniversitesi" data-tokens="mef üniversitesi">Mef Üniversitesi</option>
+                                <option value="Mimar Sinan Güzel Sanatlar Üniversitesi" data-tokens="mimar sinan güzel sanatlar üniversitesi">Mimar Sinan Güzel Sanatlar Üniversitesi</option>
+                                <option value="Nişantaşi Üniversitesi" data-tokens="nişantaşi üniversitesi">Nişantaşi Üniversitesi</option>
+                                <option value="Özyeğin Üniversitesi" data-tokens="özyeğin üniversitesi">Özyeğin Üniversitesi</option>
+                                <option value="Piri Reis Üniversitesi" data-tokens="piri reis üniversitesi">Piri Reis Üniversitesi</option>
+                                <option value="Sabanci Üniversitesi" data-tokens="sabanci üniversitesi">Sabanci Üniversitesi</option>
+                                <option value="Sağlik Bilimleri Üniversitesi" data-tokens="sağlik bilimleri üniversitesi">Sağlik Bilimleri Üniversitesi</option>
+                                <option value="Semerkand Bilim Ve Medeniyet Üniversitesi" data-tokens="semerkand bilim ve medeniyet üniversitesi">Semerkand Bilim Ve Medeniyet Üniversitesi</option>
+                                <option value="Türk-Alman Üniversitesi" data-tokens="türk-alman üniversitesi">Türk-Alman Üniversitesi</option>
+                                <option value="Türkiye Uluslararasi Islam, Bilim Ve Teknoloji Üniversitesi" data-tokens="türkiye uluslararasi islam, bilim ve teknoloji üniversitesi">Türkiye Uluslararasi Islam, Bilim Ve Teknoloji Üniversitesi</option>
+                                <option value="Türk-Japon Bilim Ve Teknoloji Üniversitesi" data-tokens="türk-japon bilim ve teknoloji üniversitesi">Türk-Japon Bilim Ve Teknoloji Üniversitesi</option>
+                                <option value="Üsküdar Üniversitesi" data-tokens="üsküdar üniversitesi">Üsküdar Üniversitesi</option>
+                                <option value="Yeditepe Üniversitesi" data-tokens="yeditepe üniversitesi">Yeditepe Üniversitesi</option>
+                                <option value="Yildiz Teknik Üniversitesi" data-tokens="yildiz teknik üniversitesi">Yildiz Teknik Üniversitesi</option>
+                                <option value="Dokuz Eylül Üniversitesi" data-tokens="dokuz eylül üniversitesi">Dokuz Eylül Üniversitesi</option>
+                                <option value="Ege Üniversitesi" data-tokens="ege üniversitesi">Ege Üniversitesi</option>
+                                <option value="Izmir Bakirçay Üniversitesi" data-tokens="izmir bakirçay üniversitesi">Izmir Bakirçay Üniversitesi</option>
+                                <option value="Izmir Demokrasi Üniversitesi" data-tokens="izmir demokrasi üniversitesi">Izmir Demokrasi Üniversitesi</option>
+                                <option value="Izmir Ekonomi Üniversitesi" data-tokens="izmir ekonomi üniversitesi">Izmir Ekonomi Üniversitesi</option>
+                                <option value="Izmir Katip Çelebi Üniversitesi" data-tokens="izmir katip çelebi üniversitesi">Izmir Katip Çelebi Üniversitesi</option>
+                                <option value="Izmir Tinaztepe Üniversitesi" data-tokens="izmir tinaztepe üniversitesi">Izmir Tinaztepe Üniversitesi</option>
+                                <option value="Izmir Yüksek Teknoloji Enstitüsü" data-tokens="izmir yüksek teknoloji enstitüsü">Izmir Yüksek Teknoloji Enstitüsü</option>
+                                <option value="Yaşar Üniversitesi" data-tokens="yaşar üniversitesi">Yaşar Üniversitesi</option>
+                                <option value="Kafkas Üniversitesi" data-tokens="kafkas üniversitesi">Kafkas Üniversitesi</option>
+                                <option value="Kastamonu Üniversitesi" data-tokens="kastamonu üniversitesi">Kastamonu Üniversitesi</option>
+                                <option value="Abdullah Gül Üniversitesi" data-tokens="abdullah gül üniversitesi">Abdullah Gül Üniversitesi</option>
+                                <option value="Erciyes Üniversitesi" data-tokens="erciyes üniversitesi">Erciyes Üniversitesi</option>
+                                <option value="Kayseri Üniversitesi" data-tokens="kayseri üniversitesi">Kayseri Üniversitesi</option>
+                                <option value="Nuh Naci Yazgan Üniversitesi" data-tokens="nuh naci yazgan üniversitesi">Nuh Naci Yazgan Üniversitesi</option>
+                                <option value="Kirklareli Üniversitesi" data-tokens="kirklareli üniversitesi">Kirklareli Üniversitesi</option>
+                                <option value="Kirşehir Ahi Evran Üniversitesi" data-tokens="kirşehir ahi evran üniversitesi">Kirşehir Ahi Evran Üniversitesi</option>
+                                <option value="Gebze Teknik Üniversitesi" data-tokens="gebze teknik üniversitesi">Gebze Teknik Üniversitesi</option>
+                                <option value="Kocaeli Üniversitesi" data-tokens="kocaeli üniversitesi">Kocaeli Üniversitesi</option>
+                                <option value="Konya Gida Ve Tarim Üniversitesi" data-tokens="konya gida ve tarim üniversitesi">Konya Gida Ve Tarim Üniversitesi</option>
+                                <option value="Konya Teknik Üniversitesi" data-tokens="konya teknik üniversitesi">Konya Teknik Üniversitesi</option>
+                                <option value="Kto Karatay Üniversitesi" data-tokens="kto karatay üniversitesi">Kto Karatay Üniversitesi</option>
+                                <option value="Necmettin Erbakan Üniversitesi" data-tokens="necmettin erbakan üniversitesi">Necmettin Erbakan Üniversitesi</option>
+                                <option value="Selçuk Üniversitesi" data-tokens="selçuk üniversitesi">Selçuk Üniversitesi</option>
+                                <option value="Kütahya Dumlupinar Üniversitesi" data-tokens="kütahya dumlupinar üniversitesi">Kütahya Dumlupinar Üniversitesi</option>
+                                <option value="Kütahya Sağlik Bilimleri Üniversitesi" data-tokens="kütahya sağlik bilimleri üniversitesi">Kütahya Sağlik Bilimleri Üniversitesi</option>
+                                <option value="Inönü Üniversitesi" data-tokens="inönü üniversitesi">Inönü Üniversitesi</option>
+                                <option value="Malatya Turgut Özal Üniversitesi" data-tokens="malatya turgut özal üniversitesi">Malatya Turgut Özal Üniversitesi</option>
+                                <option value="Manisa Celâl Bayar Üniversitesi" data-tokens="manisa celâl bayar üniversitesi">Manisa Celâl Bayar Üniversitesi</option>
+                                <option value="Kahramanmaraş Istiklal Üniversitesi" data-tokens="kahramanmaraş istiklal üniversitesi">Kahramanmaraş Istiklal Üniversitesi</option>
+                                <option value="Kahramanmaraş Sütçü Imam Üniversitesi" data-tokens="kahramanmaraş sütçü imam üniversitesi">Kahramanmaraş Sütçü Imam Üniversitesi</option>
+                                <option value="Mardin Artuklu Üniversitesi" data-tokens="mardin artuklu üniversitesi">Mardin Artuklu Üniversitesi</option>
+                                <option value="Muğla Sitki Koçman Üniversitesi" data-tokens="muğla sitki koçman üniversitesi">Muğla Sitki Koçman Üniversitesi</option>
+                                <option value="Muş Alparslan Üniversitesi" data-tokens="muş alparslan üniversitesi">Muş Alparslan Üniversitesi</option>
+                                <option value="Kapadokya Üniversitesi" data-tokens="kapadokya üniversitesi">Kapadokya Üniversitesi</option>
+                                <option value="Nevşehir Haci Bektaş Veli Üniversitesi" data-tokens="nevşehir haci bektaş veli üniversitesi">Nevşehir Haci Bektaş Veli Üniversitesi</option>
+                                <option value="Niğde Ömer Halisdemir Üniversitesi" data-tokens="niğde ömer halisdemir üniversitesi">Niğde Ömer Halisdemir Üniversitesi</option>
+                                <option value="Ordu Üniversitesi" data-tokens="ordu üniversitesi">Ordu Üniversitesi</option>
+                                <option value="Recep Tayyip Erdoğan Üniversitesi" data-tokens="recep tayyip erdoğan üniversitesi">Recep Tayyip Erdoğan Üniversitesi</option>
+                                <option value="Samsun Üniversitesi" data-tokens="samsun üniversitesi">Samsun Üniversitesi</option>
+                                <option value="Sakarya Uygulamali Bilimler Üniversitesi" data-tokens="sakarya uygulamali bilimler üniversitesi">Sakarya Uygulamali Bilimler Üniversitesi</option>
+                                <option value="Sakarya Üniversitesi" data-tokens="sakarya üniversitesi">Sakarya Üniversitesi</option>
+                                <option value="Ondokuz Mayis Üniversitesi" data-tokens="ondokuz mayis üniversitesi">Ondokuz Mayis Üniversitesi</option>
+                                <option value="Siirt Üniversitesi" data-tokens="siirt üniversitesi">Siirt Üniversitesi</option>
+                                <option value="Sinop Üniversitesi" data-tokens="sinop üniversitesi">Sinop Üniversitesi</option>
+                                <option value="Sivas Bilim Ve Teknoloji Üniversitesi" data-tokens="sivas bilim ve teknoloji üniversitesi">Sivas Bilim Ve Teknoloji Üniversitesi</option>
+                                <option value="Sivas Cumhuriyet Üniversitesi" data-tokens="sivas cumhuriyet üniversitesi">Sivas Cumhuriyet Üniversitesi</option>
+                                <option value="Tekirdağ Namik Kemal Üniversitesi" data-tokens="tekirdağ namik kemal üniversitesi">Tekirdağ Namik Kemal Üniversitesi</option>
+                                <option value="Tokat Gaziosmanpaşa Üniversitesi" data-tokens="tokat gaziosmanpaşa üniversitesi">Tokat Gaziosmanpaşa Üniversitesi</option>
+                                <option value="Avrasya Üniversitesi" data-tokens="avrasya üniversitesi">Avrasya Üniversitesi</option>
+                                <option value="Karadeniz Teknik Üniversitesi" data-tokens="karadeniz teknik üniversitesi">Karadeniz Teknik Üniversitesi</option>
+                                <option value="Trabzon Üniversitesi" data-tokens="trabzon üniversitesi">Trabzon Üniversitesi</option>
+                                <option value="Munzur Üniversitesi" data-tokens="munzur üniversitesi">Munzur Üniversitesi</option>
+                                <option value="Harran Üniversitesi" data-tokens="harran üniversitesi">Harran Üniversitesi</option>
+                                <option value="Uşak Üniversitesi" data-tokens="uşak üniversitesi">Uşak Üniversitesi</option>
+                                <option value="Van Yüzüncü Yil Üniversitesi" data-tokens="van yüzüncü yil üniversitesi">Van Yüzüncü Yil Üniversitesi</option>
+                                <option value="Yozgat Bozok Üniversitesi" data-tokens="yozgat bozok üniversitesi">Yozgat Bozok Üniversitesi</option>
+                                <option value="Zonguldak Bülent Ecevit Üniversitesi" data-tokens="zonguldak bülent ecevit üniversitesi">Zonguldak Bülent Ecevit Üniversitesi</option>
+                                <option value="Aksaray Üniversitesi" data-tokens="aksaray üniversitesi">Aksaray Üniversitesi</option>
+                                <option value="Bayburt Üniversitesi" data-tokens="bayburt üniversitesi">Bayburt Üniversitesi</option>
+                                <option value="Karamanoğlu Mehmetbey Üniversitesi" data-tokens="karamanoğlu mehmetbey üniversitesi">Karamanoğlu Mehmetbey Üniversitesi</option>
+                                <option value="Kirikkale Üniversitesi" data-tokens="kirikkale üniversitesi">Kirikkale Üniversitesi</option>
+                                <option value="Batman Üniversitesi" data-tokens="batman üniversitesi">Batman Üniversitesi</option>
+                                <option value="Şirnak Üniversitesi" data-tokens="şirnak üniversitesi">Şirnak Üniversitesi</option>
+                                <option value="Bartin Üniversitesi" data-tokens="bartin üniversitesi">Bartin Üniversitesi</option>
+                                <option value="Ardahan Üniversitesi" data-tokens="ardahan üniversitesi">Ardahan Üniversitesi</option>
+                                <option value="Iğdir Üniversitesi" data-tokens="iğdir üniversitesi">Iğdir Üniversitesi</option>
+                                <option value="Yalova Üniversitesi" data-tokens="yalova üniversitesi">Yalova Üniversitesi</option>
+                                <option value="Karabük Üniversitesi" data-tokens="karabük üniversitesi">Karabük Üniversitesi</option>
+                                <option value="Kilis 7 Aralik Üniversitesi" data-tokens="kilis 7 aralik üniversitesi">Kilis 7 Aralik Üniversitesi</option>
+                                <option value="Osmaniye Korkut Ata Üniversitesi" data-tokens="osmaniye korkut ata üniversitesi">Osmaniye Korkut Ata Üniversitesi</option>
+                                <option value="Düzce Üniversitesi" data-tokens="düzce üniversitesi">Düzce Üniversitesi</option>
+                                
+                                
+                                      </select>
                     </div>
                     <div class="row input-form">
                             <label for="school">Bölümünüz</label>
-                            <input class="form-control" placeholder="Bölümünüz" type="text" name="department"/>
+                            <input class="form-control validationStudent" placeholder="Bölümünüz" type="text" id ="department" name="department"/>
                     </div>
                     <div class="row input-form">
                             <label for="grade">Sınıf</label>
-                            <select class="form-control" name="grade">
+                            <select class="form-control validationStudent" id="grade" name="grade">
                                 <option value="" selected disabled>Seçiniz</option>
+                                <option value="Lise" >Lise</option>
+
                                 <option value="Hazırlık" >Hazırlık</option>
                                 <option value="1" >1</option>
                                 <option value="2" >2</option>
@@ -749,11 +974,11 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
             <pro id="pro" style="display:none">
                     <div class="row input-form">
                             <label for="company">Şirketiniz</label>
-                            <input class="form-control" placeholder="Şirketiniz" type="text" name="company"/>
+                            <input class="form-control validationPro" id="company" placeholder="Şirketiniz" type="text" name="company"/>
                     </div>
                     <div class="row input-form">
                             <label for="title">Ünvanınız</label>
-                            <input class="form-control" placeholder="Ünvanınız" type="text" name="title"/>
+                            <input class="form-control validationPro" id="title" placeholder="Ünvanınız" type="text" name="title"/>
                     </div>
                     <div class="row input-form">
                             <label for="motivation">Motivasyonunuz</label>
@@ -926,12 +1151,17 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         </div>
         <!--   Compec -->
     </section>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script>
 
+
+
+     </script>
+ 
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+ <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+    <script>
+       
         // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
         let vh = window.innerHeight * 0.01;
         // Then we set the value in the --vh custom property to the root of the document
@@ -1073,14 +1303,16 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         // Source: https://www.w3schools.com/howto/howto_js_countdown.asp
     </script>
     <script>
+        
     $("select[name='isStudentOrPro']").change(()=>{
         $("#pop").css("display","unset");
        if( $("select[name='isStudentOrPro']").val()=="student"){
         $("#student").css("display","unset");
         $("#pro").css("display","none");
 
-        
+      
        }
+       
        if( $("select[name='isStudentOrPro']").val()=="pro"){
         $("#pro").css("display","unset");
         $("#student").css("display","none");
@@ -1100,24 +1332,60 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
 
     $("#submit").click(()=>{
         var validationInputs = document.getElementsByClassName("validation");
-        var isReady = true;
+        var validationStudentInputs = document.getElementsByClassName("validationStudent");
+        var validationStudent1Inputs = document.getElementsByClassName("validationStudent1");
+
+
+        var validationProInputs = document.getElementsByClassName("validationPro");
+
+        var isReady1 = true;
         for (let i = 0; i < validationInputs.length; i++) {
                 if (validationInputs[i].value === "") {
                     $("#" + validationInputs[i].id).addClass("formError");
-                    isReady = false;
+                    isReady1 = false;
                 }
                 else {
                     $("#" + validationInputs[i].id).removeClass("formError");
                 }
         }
-        if(isReady){
+        var isReady2 = true;
+        for (let i = 0; i < validationStudentInputs.length; i++) {
+                if (validationStudentInputs[i].value === "") {
+                    $("#" + validationStudentInputs[i].id).addClass("formError");
+                    isReady2 = false;
+                }
+                else {
+                    $("#" + validationStudentInputs[i].id).removeClass("formError");
+                }
+        }
+        var isReady3 = true;
+        for (let i = 0; i < validationStudent1Inputs.length; i++) {
+                if (validationStudent1Inputs[i].value === "") {
+                    $("#" + validationStudent1Inputs[i].id).addClass("formError");
+                    isReady3 = false;
+                }
+                else {
+                    $("#" + validationStudent1Inputs[i].id).removeClass("formError");
+                }
+        }
+        var isReady4 = true;
+        for (let i = 0; i < validationProInputs.length; i++) {
+                if (validationProInputs[i].value === "") {
+                    $("#" + validationProInputs[i].id).addClass("formError");
+                    isReady4 = false;
+                }
+                else {
+                    $("#" + validationProInputs[i].id).removeClass("formError");
+                }
+        }
+        if(isReady1&&((isReady2&&(isReady3||$("#isBoun").val())||isReady4))){
         var res={
             name: $("input[name='name']").val(),
             surname: $("input[name='surname']").val(),
             email: $("input[name='email']").val(),
             phoneNumber: $("input[name='phoneNumber']").val(),
             isStudentOrPro: $("select[name='isStudentOrPro']").val(),
-            school: $("input[name='school']").val()||"Boğaziçi Üniversitesi",
+            school: $("select[name='school']").val()||"Boğaziçi Üniversitesi",
             department: $("input[name='department']").val(),
             grade: $("select[name='grade']").val()||"",
             studentMail: $("input[name='eduMail']").val(),
