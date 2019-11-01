@@ -91,16 +91,18 @@
                     <img class="header-logo" src="assets/RGB-LogoV5.png">
                     <h1 class="hero-title">Boğaziçi DataCamp'19</h1>
                     <div class="header-detail-text">
+                        <div style="font-size: 1.1wh;">
                         <p>Boğaziçi Üniversitesi Bilişim Kulübü Compec tarafından düzenlenen ve bu sene ikinci kez gerçeklesecek olan Boğaziçi DataCamp’e davetlisiniz!</p>
                         <p>Zirve boyunca veri biliminin iş dünyasında ki güncel uygulamalarını tanırken, workshoplar sırasında uygulamalarını deneyimleyebilceksiniz.</p>
-                       <div style="transform: translateY(10px)">
-                        <h3>Zirveye Kalan Süre</h3>
-                        <h3 id="countdownTimer"></h3>
-                        <h3>Zirve Tarihi:  24 Kasım</h3>
-                        <div class="btn btn-outline-primary">
-                            <a data-scroll href="#register" class="nav-link">Kayıt için Tıkla!</a>
                         </div>
-                    </div>
+                        <div style="font-size: 1.1wh;" style="transform: translateY(10px)">
+                            <h3>Etkinliğe Kalan Süre</h3>
+                            <h3 id="countdownTimer"></h3>
+                            <h3>23 - 24 Kasım</h3>
+                            <div class="btn btn-outline-primary">
+                                <a data-scroll href="#register" class="nav-link text-warning font-weight-bold text-wrap" style="font-size: 3rem;">Kayıt için Tıkla!</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
@@ -120,20 +122,19 @@
                 <h2>Boğaziçi DataCamp Nedir?</h2>
                 <p>
                     Boğaziçi Datacamp veri bilimi ve onun iş dünyasındaki uygulamalarının konuşması ve katılımcıların workshoplarla uygulayarak öğrenmesi üzerine olan bir zirvedir.  </p>
-                <h3>Yer</h3>
+                <h3>Yer - Tarih</h3>
                 <p>
-                    Boğaziçi Universitesi <br>
-                    Albert Long Hall
+                    Boğaziçi Üniversitesi <br>
+                    23 Kasım Workshop: Bilgisayar Mühendisliği Binası <br>
+                    24 Kasım Zirve: Albert Long Hall
+                 
                 </p>
-                <h3>Tarih</h3>
-                <p>
-                    24 Kasım
-                </p>
+            
 
             </div>
             <div class="why-container">
                 <h2>Kimler için?</h2>
-                <p>Boğaziçi DataCamp is designed for you, if</p>
+                <p>Boğaziçi DataCamp;</p>
                 <ul class="why-list">
                     <li>
                         Programlama konseptleri ve algoritmik yaklaşımların bulunduğu Bilgisayar Mühendisliği ve Yönetim Bilişim Sistemi öğrencileri,
@@ -487,7 +488,7 @@
                                 <h5 class="card-title">
                                     Öğrenci | Boğaziçi Üniversitesi
                                 </h5>
-                                <h1><span class="badge badge-dark">10 TL</span></h1>
+                                <h1><span class="badge badge-dark"> <h4>10 TL</h4> </span></h1>
                                 <p class="card-text">
 Boğaziçi Üniversitesi öğrencileri içindir.                                </p>
                                 <a href="#registrationForm" class="btn btn-light"
@@ -500,7 +501,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                         <div class="card bg-info mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Öğrenci | Diğer Okullar</h5>
-                                <h1><span class="badge badge-dark">20 TL</span></h1>
+                                <h1><span class="badge badge-dark"><h4>20 TL</h4></span></h1>
                                 <p class="card-text">
                                     Boğaziçi Üniversitesi haricindeki öğrenciler
                                     içindir.
@@ -521,7 +522,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                         <div class="card  bg-success mb-3">
                             <div class="card-body">
                                 <h5 class="card-title">Profesyonel Katılım</h5>
-                                <h1><span class="badge badge-dark">50 TL</span></h1>
+                                <h1><span class="badge badge-dark"><h4>50 TL</h4></span></h1>
                                 <p class="card-text">
                                     Öğrenci olmayan profesyoneller içindir.
                                 </p>
@@ -534,8 +535,9 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                 </div>
     
                 <p class="lead">
-                    <a class="btn btn-primary" onclick="Tawk_API.maximize()" role="button"
-                        >Toplu katılım hakkında bilgi almak isterseniz</a
+                    <a class="btn btn-primary text-wrap" onclick="Tawk_API.maximize()" role="button"
+                        >
+                        <span>Toplu katılım hakkında bilgi için lütfen iletişim kurunuz</span> </a
                     >
                 </p>
             </div>
@@ -690,7 +692,8 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
     <section 
     id="registrationForm"><!--display:none!ı sil-->
         <div class="container container-wide">
-            <h4>Kayıt Formu</h4>
+            <h1>Kayıt Formu</h1>
+            <p>Lütfen formu göndermeden önce bilgilerinizi kontrol ediniz.</p>
             <div class="row input-form">
                     <label for="name">Adınız</label>
                     <input id="name" class="form-control validation" placeholder="Adınız" type="text" name="name"/>
@@ -958,6 +961,9 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                                 <option value="2" >2</option>
                                 <option value="3" >3</option>
                                 <option value="4" >4</option>
+                                <option value="Yüksek Lisans" >Yüksek Lisans</option>
+                                <option value="Doktora" >Doktora</option>
+                                <option value="Diğer" >Diğer</option>
                             </select>
                     </div>
                     <div  id="studentMail" class="row input-form">
@@ -1061,7 +1067,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
             <div class="d-flex justify-content-center">
                     <div class="btn btn-primary" onclick="Tawk_API.maximize()">Online Chat</div>
             </div>
-            <div class="team-container clearfix">
+            <div class="team-container clearfix text-break">
                 <div class="team-member">
                     <div class="image">
                         <img src="assets/team/Emin.jpg" alt="Muhammed Emin Deniz">
@@ -1273,7 +1279,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
     </script>
     <script>
         // Set the date we're counting down to
-        var countDownDate = new Date("Nov 24, 2019 09:30:00").getTime();
+        var countDownDate = new Date("Nov 23, 2019 09:30:00").getTime();
 
         // Update the count down every 1 second
         var x = setInterval(function () {
@@ -1422,8 +1428,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         "&recaptcha="+grecaptcha.getResponse()
 
         axios.get(encodeURI(asd)).then(res=>{
-            
-            if(res.statusText=="OK")  $("#registerAll").css("display","none"); $("#responseDiv").css("display","unset"); 
+            if(res.data.responseCode=="OK")  $("#registerAll").css("display","none"); $("#responseDiv").css("display","unset"); 
             grecaptcha.reset();
             alert(res.data.responseDesc)
         })
