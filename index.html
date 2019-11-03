@@ -1448,7 +1448,8 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         axios.get(encodeURI(asd)).then(res=>{
             if(res.data.responseCode=="OK")  $("#registerAll").css("display","none"); $("#responseDiv").css("display","unset"); 
             grecaptcha.reset();
-            alert(res.data.responseDesc)
+            alert(res.data.responseDesc);
+            fbq('track', 'SubmitApplication');
         })
         }
         else{
