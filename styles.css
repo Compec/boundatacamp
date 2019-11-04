@@ -140,6 +140,7 @@
       font-size: 0.8em;
       text-align: center;
       font-weight: bold;
+      visibility: hidden;
   }
   .program-item .time hr{
       display: inline-block;
@@ -169,15 +170,15 @@
       margin: 4px 0;
   }
   .program-item .item-title{
-      font-size: 0.8em;
+      font-size: 1.1em;
       font-weight: 700;
   }
   .program-item .speaker-name{
-      font-size: 0.7em;
+      font-size: 0.9em;
       font-weight: 300;
   }
   .program-item .speaker-title{
-      font-size: 0.7em;
+      font-size: 0.8em;
       font-weight: 300;
   }
   .partners-container{
@@ -426,12 +427,12 @@
           margin: 30px auto 10px auto;
       }
       .program-item .item-title{
-          font-size: 0.9em;
+          font-size: 1.1em;
           font-weight: 700;
           line-height: 1em;
       }
       .program-item .speaker-name{
-          font-size: 0.8em;
+          font-size: 0.9em;
           font-weight: 300;
       }
       .program-item .speaker-title{
