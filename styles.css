@@ -134,13 +134,15 @@
       display: flex;
       align-items: center;
       margin: 12px 0;
+      border-top: 0.5px solid #fff;
+      padding:3%;
   }
   .program-item .time{
       width: 8%;
       font-size: 0.8em;
       text-align: center;
       font-weight: bold;
-      visibility: hidden;
+     
   }
   .program-item .time hr{
       display: inline-block;
@@ -207,7 +209,7 @@
       justify-content: space-around;
   }
   .partners-container .cooperators .sponsor{
-      width: 40%;
+      width: 80%;
   }
   .partners-container .cooperators2{
       display: flex;
@@ -338,8 +340,10 @@
           margin: 20px auto;
       }
       .partners-container .sponsor.gold{
-          width: 65%;
+          width: 30%;
           margin: 20px auto;
+          padding: 4% 0%;
+          border-bottom:0.1px solid #ddd;
       }
       .partners-container h3{
           font-size: 1.6em;
