@@ -736,6 +736,22 @@
                     </div>
 
                 </div>
+            
+         
+         
+                <h1>Medya Sponsorları</h1>
+                <hr style="border-color: #000;">
+                <div class="sponsor gold">
+
+                    <a   target="_blank" href="https://cengturkey.com/">
+                        <img src="https://cengturkey.com/wp-content/uploads/2019/01/CENG-TRANSPARAN2.png" alt="">
+                    </a>
+
+                </div>
+               
+                
+                
+               
                 <br>
                 <a
                     href="mailto:emin.deniz@compec.org?subject=Boğaziçi%20DataCamp%20Partnership&cc=salih.orhan@leader.compec.org;muge.kececi@leader.compec.org;cansu.kocabas@leader.compec.org">
@@ -1368,6 +1384,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
 <stage id="responseDiv" class="container" style="display: none;">
     <section>
     <h2>Kayıdınız için teşekkürler. Gelen Mail ve Smsteki yönergeleri takip ederek ödemenizi ve başvurunuzu tamamlayabilirsiniz.</h2>
+    <h2><a id="linkPay" href="https://go.compec.org/dtbiletgenel">Ödemek İçin Tıklayın.</a></h2>
 </section>
 </stage>
 
@@ -1737,10 +1754,26 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
         "&submit=Submit"+
         "&recaptcha="+grecaptcha.getResponse()
 
-        axios.get(encodeURI(asd)).then(res=>{
-            if(res.data.responseCode=="OK")  $("#registerAll").css("display","none"); $("#responseDiv").css("display","unset"); 
+        axios.get(encodeURI(asd)).then(ser=>{
+            if(ser.data.responseCode=="OK") {
+               
+                
+                $("#registerAll").css("display","none");
+                 $("#responseDiv").css("display","unset");
+                 if(res.isStudentOrPro=="student"){
+                 if(res.school=="Boğaziçi Üniversitesi"){
+                    $("#linkPay").attr("href","https://go.compec.org/dtbiletbogazici")
+                } 
+                else {
+                    $("#linkPay").attr("href","https://go.compec.org/dtbiletogrenci")
+                } 
+            }
+            else {
+                
+            }
+            } 
             grecaptcha.reset();
-            alert(res.data.responseDesc);
+            alert(ser.data.responseDesc);
             fbq('track', 'SubmitApplication');
         })
         }
