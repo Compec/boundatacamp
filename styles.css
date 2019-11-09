@@ -1,3 +1,9 @@
+.linkPayment{
+    color: rgb(241, 28, 28);
+    
+    border: 2px solid #fff;
+    padding: 3%;
+}
 .open{
     max-height: 150px !important;
 }
@@ -343,7 +349,7 @@
           width: 30%;
           margin: 20px auto;
           padding: 4% 0%;
-          border-bottom:0.1px solid #ddd;
+          border-boo:0.1px solid #ddd;
       }
       .partners-container h3{
           font-size: 1.6em;
