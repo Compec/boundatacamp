@@ -148,6 +148,7 @@
       font-size: 0.8em;
       text-align: center;
       font-weight: bold;
+      visibility: hidden;
      
   }
   .program-item .time hr{
