@@ -828,7 +828,7 @@
     </section>
     <section id="register">
         <div class="container container-wide register-container">
-           <h1 style="text-align: center; font-size:30px;">Kayıtlar Açıldı!!! <br class="br-mobile"> </h1>
+           <h1 style="text-align: center; font-size:30px;">Kayıtlar Bitmek Üzere!!! <br class="br-mobile"> </h1>
             <p>Etkinliğimizi beklerken bizi sosyal medya hesaplarımızdan takip edebilirsin.</p>
             <a target="_blank" href="https://www.youtube.com/channel/UCNo7VY-ZXDgIGF0n2qlH66A">
                 <div class="youtube-btn">
@@ -867,8 +867,8 @@
                 </p>
                 <hr class="my-4" />
                 <h3>
-                    1. Dönem biletlerini uygun fiyata alıp etkinliğin keyfini doya
-                    doya çıkartabilirsiniz.
+                    <!-- 1. Dönem biletlerini uygun fiyata alıp etkinliğin keyfini doya
+                    doya çıkartabilirsiniz. -->
                 </h3>
     
                 <div class="row">
@@ -888,10 +888,10 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card bg-info mb-3">
+                        <div class="card bg-dark  mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Öğrenci | Diğer Okullar</h5>
-                                <h1><span class="badge badge-dark"><h4>20 TL</h4></span></h1>
+                                <h5 class="card-title"> <del> Öğrenci | Diğer Okullar</del>  </h5>
+                                <h1><span class="badge badge-dark"><h4><del>20 TL</del></h4></span></h1>
                                 <p class="card-text">
                                     Boğaziçi Üniversitesi haricindeki öğrenciler
                                     içindir.
@@ -902,34 +902,34 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                                                     <li class="list-group-item bg-info" >Vestibulum at eros</li>
                                                   </ul> -->
     
-                                <a href="#registrationForm" class="btn btn-light"
-                                    >Bilet Al</a
+                                <a  class="btn btn-dark"
+                                    >TÜKENDİ</a
                                 >
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card  bg-success mb-3">
+                        <div class="card bg-dark  mb-3">
                             <div class="card-body">
-                                <h5 class="card-title">Profesyonel Katılım</h5>
-                                <h1><span class="badge badge-dark"><h4>50 TL</h4></span></h1>
+                                <h5 class="card-title"> <del>Profesyonel Katılım </del></h5>
+                                <h1><span class="badge badge-dark"><h4><del>50 TL</del></h4></span></h1>
                                 <p class="card-text">
                                     Öğrenci olmayan profesyoneller içindir.
                                 </p>
-                                <a href="#registrationForm" class="btn btn-light"
-                                    >Bilet Al</a
+                                <a  class="btn btn-dark"
+                                    >TÜKENDİ</a
                                 >
                             </div>
                         </div>
                     </div>
                 </div>
     
-                <p class="lead">
+                <!-- <p class="lead">
                     <a class="btn btn-primary text-wrap" onclick="Tawk_API.maximize()" role="button"
                         >
                         <span>Toplu katılım hakkında bilgi için lütfen iletişim kurunuz</span> </a
                     >
-                </p>
+                </p> -->
             </div>
         </div>
     </section>
@@ -1081,8 +1081,11 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
     <section 
     id="registrationForm"><!--display:none!ı sil-->
         <div class="container container-wide">
-            <h1>Kayıt Formu</h1>
+            <h1>Kayıt Formu </h1>
             <p>Lütfen formu göndermeden önce bilgilerinizi kontrol ediniz.</p>
+            <div class="alert alert-danger">
+                Boğaziçi Üniversitesi Öğrencisi Biletleri Dışında Biletler Tükendi. Yoğun İlginiz için teşekkürler. <br> Sosyal medya hesaplarımızı takipte kalın.
+            </div>
             <div class="row input-form">
                     <label for="name">Adınız</label>
                     <input id="name" class="form-control validation" placeholder="Adınız" type="text" name="name"/>
@@ -1113,7 +1116,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                             <label for="phoneNumber">Peki Boğaziçi Üniversitesi Öğrencisi Misiniz?</label>
                             <select class="form-control validationStudent" id="isBoun" name="isBoun">
                                 <option value="" selected disabled>Seçiniz</option>
-                                <option value="yes" >Evet</option>
+                                <option value="yes" >Evet </option>
                                 <option value="no" >Diğer</option>
                             </select>
                     </div>
@@ -1446,7 +1449,7 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
 </stage>
 <stage id="responseDiv" class="container" style="display: none;">
     <section>
-    <h2 style="letter-spacing: unset;">Kayıdınız için teşekkürler. Gelen Mail ve Smsteki yönergeleri takip ederek ödemenizi ve başvurunuzu tamamlayabilirsiniz. Aşağıdaki linke basarak da ulaşabilirsiniz</h2>
+    <h2 id="sorry" style="letter-spacing: unset;">Kayıdınız için teşekkürler.</h2>
    <div class="container"> <h2><a id="linkPay" class=" btn btn-light" href="https://go.compec.org/dtbiletgenel">Ödemek İçin Tıklayın.</a></h2></div>
 </section>
 </stage>
@@ -1826,13 +1829,19 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                  if(res.isStudentOrPro=="student"){
                  if(res.school=="Boğaziçi Üniversitesi"){
                     $("#linkPay").attr("href","https://go.compec.org/dtbiletbogazici")
+
                 } 
                 else {
-                    $("#linkPay").attr("href","https://go.compec.org/dtbiletogrenci")
+                    $("#linkPay").attr("href","https://compec.org/");
+                    $("#linkPay").css("display","none");
+                    $("#sorry").html("BİLETLERİMİZ TÜKENDİĞİNDEN KAYDINIZI GERÇEKLEŞTİREMİYORUZ");
                 } 
             }
             else {
-                $("#linkPay").attr("href","https://go.compec.org/dtbiletgenel")
+                $("#linkPay").attr("href","https://compec.org");
+                $("#linkPay").css("display","none");
+                $("#sorry").html("BİLETLERİMİZ TÜKENDİĞİNDEN KAYDINIZI GERÇEKLEŞTİREMİYORUZ");
+
             }
             } 
             grecaptcha.reset();
