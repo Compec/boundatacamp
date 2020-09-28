@@ -95,6 +95,7 @@
             <div><a data-scroll href="#partners" class="nav-link">Sponsorlar</a></div>
             <!-- <div><a data-scroll href="#registerAll" class="nav-link">Kayıt</a></div> -->
             <div><a data-scroll href="#contact" class="nav-link">İletişim</a></div>
+            <div><a data-scroll  href="./2019/index.html" class="nav-link">DataCamp'19</a></div>
             <div><a data-scroll  href="./2018/index.html" class="nav-link">DataCamp'18</a></div>
 
         </div>
@@ -174,7 +175,7 @@
     <div class="container-wide">
         <h2>Geçtiğimiz Seneden Fotoğraflar</h2>
     </div>
-    <div class="container ">
+    <div class="container "> <!--KOPYALAMANIN BAŞI, BURADAN SONRASI GİDECEK.-->
         <script src="https://cdn.jsdelivr.net/npm/publicalbum@latest/embed-ui.min.js" async></script>
         <div class="pa-carousel-widget" style="width:100%; height:480px; display:none;"
             data-link="https://photos.app.goo.gl/zhGfzNVU1fBvjAuW7" data-title=""
@@ -194,7 +195,7 @@
             <object data="https://lh3.googleusercontent.com/97xft9ERelqvit03nJ59mXmvsddu5yr3LfGdBrXvvSrDLtPy0HvJzafyOsSZOG6dNHdfBwbJgfYlItK_9-FbLHD9CyjdtYyNECNqXFVJVioQmwAvjfznxuWvMcLNZCgKbOVxUpOuAQ=w1920-h1080"></object>
 
         </div>
-
+        <!--BURAYA KADAR, ARASININ YERİNE KOY-->
     </div>
 </section>
 
@@ -245,7 +246,7 @@
 
                         </div>
                     </div>
-                   
+                    
                     <div class="program-item">
                         <div class="time">
                             <div>
@@ -976,7 +977,7 @@
         </div>
     
     </section>
-    <section id="register">
+    <section id="register" style="display: none;" >
         <div class="container container-wide register-container">
            <h1 style="text-align: center; font-size:30px;">Kayıtlar Sona Erdi!!! <br class="br-mobile"> </h1>
             <p>Etkinliğimizi beklerken bizi sosyal medya hesaplarımızdan takip edebilirsin.</p>
@@ -1003,9 +1004,13 @@
         </div>
     </section>
 
-<stage id="registerAll" style="display: none;">
+<stage id="registerAll" 
 
-    <section>
+
+>
+
+<!-- style="display: none;" -->
+    <section style="display: none;"> <!--KAYILTAR AÇILINCA STYLE'I SİL-->
         <div class="container container-wide">
             <div class="jumbotron" style="background-color: rgb(0, 0, 50)">
                 <h1 class="display-4">BİLET SATIN AL</h1>
@@ -1038,10 +1043,10 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card bg-dark  mb-3">
+                        <div class="card bg-primary mb-3">
                             <div class="card-body">
-                                <h5 class="card-title"> <del> Öğrenci | Diğer Okullar</del>  </h5>
-                                <h1><span class="badge badge-dark"><h4><del>20 TL</del></h4></span></h1>
+                                <h5 class="card-title"> Öğrenci | Diğer Okullar</h5>
+                                <h1><span class="badge badge-dark"><h4>20 TL</h4></span></h1>
                                 <p class="card-text">
                                     Boğaziçi Üniversitesi haricindeki öğrenciler
                                     içindir.
@@ -1052,23 +1057,23 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
                                                     <li class="list-group-item bg-info" >Vestibulum at eros</li>
                                                   </ul> -->
     
-                                <a  class="btn btn-dark"
-                                    >TÜKENDİ</a
+                                <a href="#registrationForm" class="btn btn-light"
+                                    >Bilet Al</a
                                 >
                             </div>
                         </div>
                     </div>
                     <div class="col-sm-4">
-                        <div class="card bg-dark  mb-3">
+                        <div class="card bg-primary mb-3">
                             <div class="card-body">
-                                <h5 class="card-title"> <del>Profesyonel Katılım </del></h5>
-                                <h1><span class="badge badge-dark"><h4><del>50 TL</del></h4></span></h1>
+                                <h5 class="card-title"> Profesyonel Katılım </h5>
+                                <h1><span class="badge badge-dark"><h4>50 TL</h4></span></h1>
                                 <p class="card-text">
                                     Öğrenci olmayan profesyoneller içindir.
                                 </p>
-                                <a  class="btn btn-dark"
-                                    >TÜKENDİ</a
-                                >
+                                <a href="#registrationForm" class="btn btn-light"
+                                >Bilet Al</a
+                            >
                             </div>
                         </div>
                     </div>
@@ -1227,9 +1232,19 @@ Boğaziçi Üniversitesi öğrencileri içindir.                                
             </div>
         </div>
     </section>
+    <!-- style="display: none;" -->
+    <div class="section form" style= "background-image: linear-gradient(45deg, rgb(0, 0, 50) 70%, #000000 100%); padding-top: 50px; display: none;">
+        <!--
+        <amp-iframe src="https://docs.google.com/forms/d/1e6mX3SKDqSgvUl6IGc4DQvlBUDfB8pjG563qxz7bMMs/viewform?embedded=true" width="640" height="1200" frameborder="0"
+                    sandbox="allow-scripts allow-same-origin"
+                    layout="responsive">
+        </amp-iframe> -->
+        <iframe src="https://docs.google.com/forms/d/1e6mX3SKDqSgvUl6IGc4DQvlBUDfB8pjG563qxz7bMMs/viewform?embedded=true" style="width: 100%;height: 500px;" frameborder="0" marginheight="0" marginwidth="0">Loading... Eğer form açılmıyorsa <a href="https://docs.google.com/forms/d/e/1FAIpQLSf0UBD0mIYc0J4tMkOXqC4IUkjeixqRSKjjJ-Z5QAyyCRm5sw/viewform">https://docs.google.com/forms/d/e/1FAIpQLSf0UBD0mIYc0J4tMkOXqC4IUkjeixqRSKjjJ-Z5QAyyCRm5sw/viewform</a> linkinden kayıt olabilirsiniz</iframe> 
+    </div>
     
-    <section style="display: none;"
-    id="registrationForm"><!--display:none!ı sil-->
+    <section
+     
+    id="registrationForm" style="display: none;" ><!--display:none!ı sil-->
         <div class="container container-wide">
             <h1>Kayıt Formu </h1>
             <p>Lütfen formu göndermeden önce bilgilerinizi kontrol ediniz.</p>
