@@ -19,4 +19,3 @@ jobs:
         LOCAL_DIR: ${{ secrets.LOCAL_DIR }}
         ARGS: --delete
         # --delete arg will delete files on the server if you've deleted them in git
-
