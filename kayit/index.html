@@ -145,6 +145,24 @@
             <div class="container container-wide">
                 <div>
                     <h1 style="font-size: 3em; text-align: center;">Bilet Satın Al</h1>
+                    <!-- <p class="lead">
+                    </p> -->
+                    <!--
+                    <div class="programs-container">
+                        <div class="program-container" style="text-align: center;">
+                            <h3>Bu biletler sadece 24 Kasım'daki zirve içindir.
+                                <br> 
+                                Workshoplara zirveye bilet alanlar arasından başvuran ve seçilen katılımcılar 23
+                                Kasım'da ücretsiz katılabileceklerdir.
+                            </h3>
+                        </div>
+                    </div>
+                    -->
+                    <h3>
+                        <!-- 1. Dönem biletlerini uygun fiyata alıp etkinliğin keyfini doya
+                        doya çıkartabilirsiniz. -->
+                    </h3>
+        
                     <div class="row">
                         <div class="col-sm-4 ">
                             <div class="card bg-primary mb-3">
@@ -154,7 +172,7 @@
                                     </h5>
                                     <h1><span class="badge badge-dark"> <h4>TBA TL</h4> </span></h1>
                                     <p class="card-text">Boğaziçi Üniversitesi öğrencileri içindir.</p>
-                                    <a data-scroll href="#registrationForm" class="btn btn-light"  >Bilet Al</a>
+                                    <a href="#registrationForm" class="btn btn-light" onclick="boun_student()" >Bilet Al</a>
                                 </div>
                             </div>
                         </div>
@@ -167,7 +185,13 @@
                                         Boğaziçi Üniversitesi haricindeki öğrenciler
                                         içindir.
                                     </p>
-                                    <a data-scroll href="#registrationForm" class="btn btn-light" >Bilet Al</a>
+                                    <!-- <ul class="list-group list-group-flush " style="background-color: rgb(0, 0, 50)">
+                                                        <li class="list-group-item bg-info">Lise</li>
+                                                        <li class="list-group-item bg-info" >Dapibus ac facilisis in</li>
+                                                        <li class="list-group-item bg-info" >Vestibulum at eros</li>
+                                                    </ul> -->
+        
+                                    <a href="#registrationForm" class="btn btn-light" onclick="other_student()">Bilet Al</a>
                                 </div>
                             </div>
                         </div>
@@ -179,7 +203,7 @@
                                     <p class="card-text">
                                         Öğrenci olmayan profesyoneller içindir.
                                     </p>
-                                    <a data-scroll href="#registrationForm" class="btn btn-light" >Bilet Al</a>
+                                    <a href="#registrationForm" class="btn btn-light" onclick="professionals()">Bilet Al</a>
                                 </div>
                             </div>
                         </div>
@@ -338,7 +362,7 @@
                 </div>
             </div>
         </section>
-            <section id="registrationForm" >
+            <section >
                 <div class="datacamp_widget" data-subreddit="2020"></div>
 
             </section>
@@ -358,13 +382,36 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
-      
- 
+        <!--Load the API from the specified URL
+        * The async attribute allows the browser to render the page while the API loads
+        * The key parameter will contain your own API key (which is not needed for this tutorial)
+        * The callback parameter executes the initMap() function
+        -->
+        <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAskF-uLtsMYZ-BveXRd8ov2EaWd0o6mxQ&callback=initMap">
+        </script>
         <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
         <script>
             var scroll = new SmoothScroll('a.nav-link', {
                 offset: 80
             });
+        </script>
+        <script>
+            function boun_student() {
+            document.getElementById("registrationFormFrame").src = "https://docs.google.com/forms/d/18t2WEmh62iCs1bzHmwptVt53g37KfWEExWaqRzJJ7oc/viewform?embedded=true";
+            document.getElementById("registrationFormFrame").classList.remove("hideform");
+            }
+
+            function other_student() {
+            document.getElementById("registrationFormFrame").src = "https://docs.google.com/forms/d/1EWoZpKbcb4NE1iirFD4CBB2cN4ZkCZRY5ZfUJ201juI/viewform?embedded=true";
+            document.getElementById("registrationFormFrame").classList.remove("hideform");
+            }
+
+            function professionals() {
+            document.getElementById("registrationFormFrame").src = "https://docs.google.com/forms/d/1RW0EQqtIYjj4GlaOQdjsYY_q7jnPmf5NY39lb3E83x4/viewform?embedded=true";
+            document.getElementById("registrationFormFrame").classList.remove("hideform");
+            }
+        
         </script>
         <script src="/main.js"></script>
         <link href="https://datacamp-form-widget.onrender.com/index.css" rel="stylesheet" />
