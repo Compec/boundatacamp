@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="shortcut icon" type="image/png" href="/assets/logo_icon.png"/>
+
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
+
+    <title>
+        Boğaziçi DataCamp
+    </title>
+
+    <meta name="description" content="Boğaziçi DataCamp is a two-day summit, including talks on the business applications of data science and workshops in which you can practice on the related technologies.">
+    <meta charset="UTF-8">
+
+    <style>
+        html, body{
+            margin: 0;
+            padding: 0;
+        }
+        section{
+            background-image: linear-gradient(45deg, rgba(0,131,110,1) 0%, #000000 100%);
+            color: white;
+            padding: 10px;
+        }
+        body{
+            font-family: 'PT Mono', monospace;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+        nav{
+            display: none;
+        }
+        .btn{
+            background-color: rgba(0, 0, 0, 0.5);
+            border: 2px solid white;
+            display: inline;
+            padding: 12px 24px;
+            font-size: 1.2em;
+        }
+        .btn a{
+            text-decoration: none;
+            color: white;
+            letter-spacing: 2px;
+        }
+        #c{
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        section h2{
+            letter-spacing: 2px;
+        }
+        section p{
+            line-height: 1.2em;
+        }
+        header{
+            width: 100%;
+            height: 100vh;
+            height: calc(var(--vh, 1vh) * 100);
+            min-height: 450px;
+            color: white;
+        }
+        .header-content{
+            position: relative;
+            text-align: center;
+        }
+        .header-logo{
+            width: 60%;
+            margin-top: 30px;
+        }
+        .header-logo img{
+            width: 100%;
+        }
+        .header-detail-text{
+            padding: 20px 20px;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 1.2em;
+            margin-bottom: 40px;
+        }
+        .header-image{
+            display: none;
+        }
+        .hero-title{
+            display: none;
+        }
+        .why-container{
+
+        }
+        .why-container h3{
+            text-decoration: underline;
+        }
+        .why-list{
+            list-style: none;
+            padding-left: 10px;
+            line-height: 1.4em;
+        }
+        .why-list li{
+            padding: 4px 0;
+        }
+        .why-list li:before{
+            font-size: 1.4em;
+            content: '✓';
+            padding: 0 2px;
+        }
+        .program-container{
+            box-sizing: border-box;
+            padding: 4px;
+            border-radius: 15px;
+            border: 4px solid #E2FFFA;
+            margin: 16px 0;
+        }
+        .program-container .program-day{
+            text-align: center;
+        }
+        .program-item{
+            display: flex;
+            align-items: center;
+            margin: 12px 0;
+        }
+        .program-item .time{
+            width: 8%;
+            font-size: 0.8em;
+            text-align: center;
+            font-weight: bold;
+        }
+        .program-item .time hr{
+            display: inline-block;
+            width: 40%;
+            border-color: white;
+        }
+        .program-item .image{
+            width: 22%;
+            text-align: center;
+        }
+        .program-item .image img{
+            width: 100%;
+            border-radius: 100%;
+            box-sizing: border-box;
+            border: 2px solid white;
+        }
+        .program-item .image.triple img{
+            width: 80%;
+        }
+        .program-item .text{
+            width: 70%;
+            box-sizing: border-box;
+            padding: 4px 4px 4px 8px;
+        }
+        .program-item h3, .program-item h4{
+            margin: 4px 0;
+        }
+        .program-item .item-title{
+            font-size: 0.8em;
+            font-weight: 700;
+        }
+        .program-item .speaker-name{
+            font-size: 0.7em;
+            font-weight: 300;
+        }
+        .program-item .speaker-title{
+            font-size: 0.7em;
+            font-weight: 300;
+        }
+        .partners-container{
+            color: black;
+            background: white;
+            text-align: center;
+            padding: 40px;
+            box-sizing: border-box;
+            outline: 20px double black;
+            margin: 50px 20px;
+        }
+        .partners-container .sponsor img{
+            width: 100%;
+        }
+        .partners-container .sponsor.main{
+            width: 50%;
+            margin: 20px auto;
+        }
+        .partners-container .sponsor.gold{
+            width: 55%;
+            margin: 20px auto;
+        }
+        .partners-container .cooperators{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+        }
+        .partners-container .cooperators .sponsor{
+            width: 40%;
+        }
+        .register-container h3{
+            text-align: center;
+            line-height: 1.2em;
+            letter-spacing: 1px;
+        }
+        .register-container .register-btn{
+            margin: 20px auto;
+            padding: 20px;
+            width: 200px;
+            background-color: white;
+            cursor: pointer;
+            border-radius: 12px;
+            text-align: center;
+        }
+        .register-container a{
+            text-decoration: none;
+            color: rgb(0,131,110);
+            font-weight: 700;
+            font-size: 1.4em;
+        }
+        .team-member{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 15px 4px;
+            box-sizing: border-box;
+            padding: 10px;
+            border-radius: 15px;
+            border: 4px solid #E2FFFA;
+        }
+        .team-member .image{
+            width: 30%;
+        }
+        .team-member .image img{
+            width: 80%;
+            margin: 4px 10%;
+            border-radius: 12px;
+        }
+        .team-member .text{
+            width: 70%;
+            box-sizing: border-box;
+            padding-left: 10px;
+        }
+        .team-member .text a{
+            text-decoration: none;
+            color: white;
+        }
+        .map-container{
+            height: 400px;
+            width: 100%;
+        }
+        .footer-container{
+            text-align: center;
+        }
+        .footer-container img{
+            width: 60%;
+            margin: 20px auto;
+        }
+        @media screen and (min-width: 767px){
+            .container{
+                width: 767px;
+                margin: 0 auto;
+            }
+            .header-image{
+                display: block;
+            }
+            .header-image img{
+                width: 100%;
+            }
+            .header-container{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                padding-top: 200px;
+            }
+            .header-container .header-text{
+                width: 60%;
+                margin: 20px 0;
+                padding: 0 20px;
+            }
+            .header-container .header-image{
+                width: 40%;
+            }
+        }
+        @media screen and (min-width: 600px){
+            .programs-container{
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+        @media screen and (min-width: 767px){
+            .container{
+                width: 767px;
+                margin: 0 auto;
+            }
+            .container-wide{
+                width: 100%;
+            }
+            .partners-container .sponsor.main{
+                width: 40%;
+                margin: 20px auto;
+            }
+            .partners-container .sponsor.gold{
+                width: 45%;
+                margin: 20px auto;
+            }
+            .partners-container h3{
+                font-size: 1.6em;
+                font-weight: 700;
+                margin: 40px 0 20px 0;
+            }
+            .hero-title{
+                display: block;
+            }
+            .header-logo{
+                display: none;
+            }
+            .footer-container img{
+                width: 50%;
+                margin: 25px auto 10px auto;
+            }
+            nav{
+                width: 100%;
+                background: black;
+                color: white;
+                position: fixed;
+                display: block;
+                z-index: 11;
+            }
+            .menu-container{
+                height: 80px;
+                margin-left: 50%;
+                width: 50%;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                align-content: center;
+            }
+            .menu-container div{
+                width: 16%;
+                box-sizing: border-box;
+                text-align: center;
+            }
+            .menu-container div a{
+                display: block;
+                padding: 8px 16px;
+            }
+            nav a{
+                text-decoration: none;
+                color: white;
+                font-size: 1.1em;
+                font-weight: 700;
+            }
+            nav .logo-container{
+                height: 68px;
+                position: absolute;
+                top: 6px;
+                left: 16px;
+            }
+            nav .logo-container img{
+                height: 64px;
+            }
+        }
+        @media screen and (min-width: 960px){
+            .container-wide{
+                width: 960px;
+                margin: 0 auto;
+            }
+            .programs-container{
+                width: 100%;
+                display: flex;
+                align-items: start;
+            }
+            .program-container{
+                width: 50%;
+                margin: 20px;
+            }
+            .team-member{
+                float: left;
+                width: 48%;
+                margin: 15px 1%;
+            }
+            .footer-container img{
+                width: 40%;
+                margin: 30px auto 10px auto;
+            }
+            .program-item .item-title{
+                font-size: 0.9em;
+                font-weight: 700;
+                line-height: 1.2em;
+            }
+            .program-item .speaker-name{
+                font-size: 0.8em;
+                font-weight: 300;
+            }
+            .program-item .speaker-title{
+                font-size: 0.8em;
+                font-weight: 300;
+            }
+        }
+
+        @media screen and (min-width: 1350px){
+            .header-container{
+                width: 80%;
+                margin: 0 auto;
+            }
+        }
+
+        .image.partner{
+            border-radius: 100%;
+            background: white;
+            box-sizing: border-box;
+            border: none!important;
+            height: 93.27px;
+        }
+        .image.partner img{
+            object-fit: contain;
+            width: 86px;
+            height: 93.27px;
+            margin: auto;
+            border: none;
+        }
+
+        #aws .image.partner img{
+            border-radius: 0;
+        }
+        .prog-cont{
+            padding: 10px;
+            box-sizing: border-box;
+            width: 1200px;
+            height: 1500px;
+        }
+
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128963962-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-128963962-1');
+    </script>
+</head>
+<body>
+    <section id="program">
+        <div class="container container-wide prog-cont">
+            <h2 style="text-align: center">Boğaziçi DataCamp'18 Program</h2>
+            <div class="programs-container">
+                <div class="program-container">
+                    <h3 class="program-day">17th November - Saturday</h3>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                10<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                10<br>
+                                30
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/yunus.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Data Science and Data Scientists <br>
+                                Concepts, Titles and the Future</h3>
+                            <h4 class="speaker-name">Yunus Emrah Bulut</h4>
+                            <h4 class="speaker-title">Data Science Instructor, Consultant and Author, Datajarlabs</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                10<br>
+                                30
+                            </div>
+                            <hr>
+                            <div>
+                                11<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/caner.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Leverage Your Business with Artificial Intelligence</h3>
+                            <h4 class="speaker-name">Caner Canak</h4>
+                            <h4 class="speaker-title">Artificial intelligence and Data Analytics Manager at Turkcell</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                11<br>
+                                30
+                            </div>
+                            <hr>
+                            <div>
+                                12<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/ersin.jfif" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Garanti Bank Presentation</h3>
+                            <h4 class="speaker-name">Ersin Kaldı</h4>
+                            <h4 class="speaker-title">Büyük Veri ve İleri Analitik, Süreç Analitiği Yöneticisi at Garanti Bank</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                12<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                12<br>
+                                30
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/fatih.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Doğal Dil İşleme ve Makine Öğrenmesi ile Metin Analitiği</h3>
+                            <h4 class="speaker-name">Fatih Samet Çetin</h4>
+                            <h4 class="speaker-title">Co-Founder & Chief Scientist at Artiwise</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                12<br>
+                                30
+                            </div>
+                            <hr>
+                            <div>
+                                13<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/gunay.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Armut.com'da Makine Öğrenmesi Uygulamaları</h3>
+                            <h4 class="speaker-name">Günay Özkan</h4>
+                            <h4 class="speaker-title">Associate Director of Engineering, ML & AI Team at Armut.com</h4>
+                        </div>
+                    </div>
+                    <div class="program-item" id="aws">
+                        <div class="time">
+                            <div>
+                                14<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                17<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image partner">
+                            <img src="assets/partners/aws.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Creating Machine Learning Models Using AWS and Publishing them as Web Services</h3>
+                            <h4 class="speaker-name">Barış Yasin</h4>
+                            <h4 class="speaker-title">Solutions Architect | Amazon Web Services</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                14<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                17<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image partner">
+                            <img src="assets/partners/artiwise.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Classification and Topic Modeling using Open Source and Artiwise Analytics</h3>
+                            <h4 class="speaker-name">Fatih Samet Çetin, Esra Aydemir, Chief Scientist, Oktay Şahin Şadoğlu - Artiwise</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                14<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                17<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image partner">
+                            <img src="assets/partners/ibm.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Build a machine learning recommendation engine to encourage additional purchases based on past buying behavior</h3>
+                            <h4 class="speaker-name">Damla Gül Altunay, Emre Kutluğ, Merve Özmen - Developer Advocate at IBM</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="program-container">
+                    <h3 class="program-day">18th November - Sunday</h3>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                10<br>
+                                30
+                            </div>
+                            <hr>
+                            <div>
+                                11<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/erdem.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Yapay Görme ve Derin Öğrenme Yöntemlerinin Perakende Sektörüne Uygulanması</h3>
+                            <h4 class="speaker-name">Erdem Yörük</h4>
+                            <h4 class="speaker-title">Chief Scientist at Vispera</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                11<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                11<br>
+                                30
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/yasemin.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Deep Learning Türkiye 101: Neden Derin Öğrenme? </h3>
+                            <h4 class="speaker-name">Yasemin Yaşaroğlu</h4>
+                            <h4 class="speaker-title">DeepLearning Turkey</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                12<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                12<br>
+                                30
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/samet.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">How Graph Databases used in Police Department</h3>
+                            <h4 class="speaker-name">Samet Kilictas</h4>
+                            <h4 class="speaker-title">Solutions Architect at Huawei</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                12<br>
+                                30
+                            </div>
+                            <hr>
+                            <div>
+                                13<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image">
+                            <img src="assets/speakers/halil.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Dijitopya: Dijital Gelecek Nasıl Gelecek?</h3>
+                            <h4 class="speaker-name">Halil Aksu</h4>
+                            <h4 class="speaker-title">Founder & CEO at Gelecekhane</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                14<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                17<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image partner">
+                            <img src="assets/partners/gd.png" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Building and Serving Machine Learning Models on a Browser using TensorFlowJS</h3>
+                            <h4 class="speaker-name">Karthik Muthuswamy</h4>
+                            <h4 class="speaker-title">Google Developers Expert in Machine Learning</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                14<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                17<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image partner">
+                            <img src="assets/partners/huawei.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">Embarking on Your Dream Job: Expectations, Challenges and Future</h3>
+                            <h4 class="speaker-title">Huawei Team</h4>
+                        </div>
+                    </div>
+                    <div class="program-item">
+                        <div class="time">
+                            <div>
+                                14<br>
+                                00
+                            </div>
+                            <hr>
+                            <div>
+                                17<br>
+                                00
+                            </div>
+                        </div>
+                        <div class="image partner">
+                            <img src="assets/partners/leo.jpg" alt="">
+                        </div>
+                        <div class="text">
+                            <h3 class="item-title">PCL(Point Cloud Library) ile LiDAR Nokta Bulutu Uygulamaları</h3>
+                            <h4 class="speaker-name">M. Fatih Cirit</h4>
+                            <h4 class="speaker-title">Software Developer at LEO Mühendislik</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="partners">
+        <div class="container">
+            <h2>Partners</h2>
+            <div class="partners-container">
+                <div class="sponsor main">
+                    <h3>Main Sponsor</h3>
+                    <a target="_blank" href="https://www.huawei.com/tr/">
+                        <img src="assets/partners/huawei.png" alt="">
+                    </a>
+                </div>
+                <div class="sponsor gold">
+                    <h3>Gold Sponsor</h3>
+                    <a target="_blank" href="https://www.garanti.com.tr/tr">
+                        <img src="assets/partners/garanti.jpg" alt="">
+                    </a>
+                </div>
+                <h3>Strategic Partners</h3>
+                <div class="cooperators">
+                    <div class="sponsor">
+                        <a target="_blank" href="https://deeplearningturkiye.com/">
+                            <img src="assets/partners/deeptr.png" alt="">
+                        </a>
+                    </div>
+                    <div class="sponsor">
+                        <a target="_blank" href="https://developers.google.com/">
+                            <img src="assets/partners/gd.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

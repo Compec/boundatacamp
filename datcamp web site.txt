@@ -4,9 +4,24 @@ bize ulaşın kısmı
 compec 2021 yap
 program taslak olacak
 program sonundaki mail kısmı 
+--------------------------------------------
+datacamp 22 asaf tarafından alınan notlar
 
 
-2022 datacamp düzenlenecekler:
-sponsorlar sayfası
-program sayfası
-lorem ipsum
+kayitozel: 2020nin sss sayfası.
+kayıt: 2021in sss sayfası
+datathon:2020den, gizlenmiş
+
+
+21 klasörüne kopyalananlar:
+18,19,20 klasörleri
+assets
+datathon
+kayıt ----- 22 için ismi "sss ile değiştirildi"
+kayıtözel ----gereksiz sayfa olduğu için kopyalamak yerine taşındı
+program
+sponsorlar
+index.html
+main.js
+readme.md
+styles.css
