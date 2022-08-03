@@ -9,3 +9,4 @@ program sonundaki mail kısmı
 2022 datacamp düzenlenecekler:
 sponsorlar sayfası
 program sayfası
+lorem ipsum
