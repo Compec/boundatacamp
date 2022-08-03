@@ -4,3 +4,6 @@ bize ulaşın kısmı
 compec 2021 yap
 program taslak olacak
 program sonundaki mail kısmı 
+
+
+2022 datacamp düzenlenecekler:
