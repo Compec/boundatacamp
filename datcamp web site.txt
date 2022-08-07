@@ -18,7 +18,7 @@ datathon:2020den, gizlenmiş
 assets
 datathon
 kayıt ----- 22 için ismi "sss ile değiştirildi"
-kayıtözel ----gereksiz sayfa olduğu için kopyalamak yerine taşındı
+kayıtözel ----gereksiz sayfa olduğu için kopyalamak yerine taşındı (yeni ismi kayitozel-21)
 program
 sponsorlar
 index.html

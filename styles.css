@@ -3,7 +3,7 @@ header.main {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #10069475;
+    background-color: #100694; /* navbar şeffaflığı buradan değişiyor, sonra 75 eklersen eskisi gibi olur */
     /*background-color: rgba(18, 41, 93, 0.9);*/
     z-index: 9;
     position: fixed;
@@ -38,7 +38,7 @@ header.main {
     position: fixed;
     z-index: 10;
     top: 0;
-    left: 0;
+    right: 0;
     background-color: #111111;
     overflow-x: hidden;
     transition: 0.5s;
