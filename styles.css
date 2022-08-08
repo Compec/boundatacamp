@@ -392,8 +392,9 @@ header.main {
   }
   .team-member{
       display: flex;
-      justify-content: center;
-      align-items: center;
+      justify-content: center; /**/
+      align-items: center; /**/
+      /*flex-wrap:wrap;  burası sonradan eklendi */
       margin: 15px 4px;
       box-sizing: border-box;
       padding: 10px;
