@@ -50,3 +50,39 @@ window.addEventListener('click', (e) => {
   
   }
 });
+
+let tempanswerid='0x'
+let tempdivid='1x'
+let tempbtnid='2x'
+function toggleQuestion(answerid,divid,btnid){
+  const answerblock=document.getElementById(answerid);
+  if(!(answerid==tempanswerid && divid==tempdivid && btnid==tempbtnid)) {
+  document.getElementById(tempanswerid).classList.toggle("isOpen");
+  document.getElementById(tempbtnid).classList.toggle("isOpen");
+  document.getElementById(tempdivid).classList.toggle("isOpen");
+  document.getElementById(divid).classList.toggle("isOpen");
+  document.getElementById(btnid).classList.toggle("isOpen");
+  document.getElementById(answerid).classList.toggle("isOpen");
+  tempanswerid = answerid;
+  tempbtnid = btnid;
+  tempdivid = divid;
+  }
+  else if (answerid==tempanswerid && divid==tempdivid && btnid==tempbtnid){
+    tempanswerid='0x'
+    tempdivid='1x'
+    tempbtnid='2x'
+    document.getElementById(divid).classList.toggle("isOpen");
+    document.getElementById(btnid).classList.toggle("isOpen");
+    document.getElementById(answerid).classList.toggle("isOpen");
+  }
+  /* 
+  if(answerblock.style.display=="block"){
+    setTimeout(function(){
+    answerblock.style.display="none"
+    },00)
+  }
+  else{
+    answerblock.style.display="none"
+  }
+  */
+}
