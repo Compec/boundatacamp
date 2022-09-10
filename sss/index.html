@@ -121,107 +121,202 @@
             </div>
             
         </header>
-
-        <section style="padding-top: 95px;">
-        </section>
-
-
-        <section id="faq">
-            <div id="0x"><p id="1x"></p><p id="2x"></p></div>
-          <div id="leftcolumn" class="faqcolumns">
-            <div id="q1" class="question">
-              <button onclick="toggleQuestion('a1','q1','b1')" class="faqbutton" id="b1">
-                Boğaziçi DataCamp kaç gün sürecek ve nerede düzenlenecek?
-              </button>
-              <p id="a1"  class="faqanswer">
-                Toplam 5 gün sürecek olan etkinliğin ilk 4 günü online, son günü hibrit  olarak gerçekleştirilecektir. Yüz yüze katılım bileti alan katılımcılarımız etkinliğin son gününe Garanti Kültür Merkezi’nde katılabileceklerdir.
-              </p>
-            </div> 
-            
-            <div id="q2" class="question">
-              <button onclick="toggleQuestion('a2','q2','b2')" class="faqbutton" id="b2">
-                Bilet ücretine neler dahil?
-              </button>
-              <p id="a2"  class="faqanswer">
-                Bilet ücretine Zirve’ye katılma hakkı, Workshoplara katılma hakkı ve promosyonlara erişim hakkı dahil olmak üzere Boğaziçi DataCamp’in tüm içerikleri dahildir. Sadece 5 Aralık'taki hibrit güne yüz yüze katılım için yüz yüze kategoriden bilet almanız gerekmektedir.
-              </p>
-            </div> 
-            
-            <div id="q3" class="question">
-              <button onclick="toggleQuestion('a3','q3','b3')" class="faqbutton" id="b3">
-                5 Aralık’tan sonra düzenlenecek olan webinarlara nasıl katılabilirim?
-              </button>
-              <p id="a3"  class="faqanswer">
-                Boğaziçi DataCamp katılımcıları sene boyunca düzenli olarak düzenlenecek olan webinarlara ücretsiz katılabilirler. Bu süreçteki iletişim mail yoluyla yapılacaktır.
-              </p>
+        
+        <section id="register" style="display: none;" >
+            <div class="container container-wide register-container">
+            <h1 style="text-align: center; font-size:30px;">Çok Yakında... <br class="br-mobile"> </h1>
+                <p>Etkinliğimizi beklerken bizi sosyal medya hesaplarımızdan takip edebilirsin.</p>
+                <a target="_blank" href="https://www.youtube.com/channel/UCNo7VY-ZXDgIGF0n2qlH66A">
+                    <div class="youtube-btn">
+                        Youtube
+                    </div>
+                </a>
+            <!-- ? --> 
+                <p>Diğer sosyal medya hesaplarımız Instagram:</p>
+                <div class="instagram">
+                    <a target="_blank" href="https://www.instagram.com/boundatacamp/">
+                        <div class="instagram-btn">
+                            @boundatacamp
+                        </div>
+                    </a>
+                    <a target="_blank" href="https://www.instagram.com/bouncompec/">
+                        <div class="instagram-btn">
+                            @bouncompec
+                        </div>
+            <!-- ?? -->
+                    </a>
+                </div>
             </div>
-            <div id="q4" class="question">
-                <button onclick="toggleQuestion('a4','q4','b4')" class="faqbutton" id="b4">
-                    Datacamp ne zaman
-                </button>
-                <p id="a4"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div>
-              <div id="q5" class="question">
-                <button onclick="toggleQuestion('a5','q5','b5')" class="faqbutton" id="b5">
-                    Datacamp ne zaman
-                </button>
-                <p id="a5"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div>
-           <!-- 
-          </div>
-          <div id="rightcolumn" class="faqcolumns" >
-            -->  
-            <div id="q6" class="question">
-                <button onclick="toggleQuestion('a6','q6','b6')" class="faqbutton" id="b6">
-                    Datacamp ne zaman
-                </button>
-                <p id="a6"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div> 
-              
-              <div id="q7" class="question">
-                <button onclick="toggleQuestion('a7','q7','b7')" class="faqbutton" id="b7">
-                    Datacamp ne zaman
-                </button>
-                <p id="a7"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div> 
-              
-              <div id="q8" class="question">
-                <button onclick="toggleQuestion('a8','q8','b8')" class="faqbutton" id="b8">
-                    Datacamp ne zaman
-                </button>
-                <p id="a8"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div>
-              <div id="q9" class="question">
-                <button onclick="toggleQuestion('a9','q9','b9')" class="faqbutton" id="b9">
-                    Datacamp ne zaman
-                </button>
-                <p id="a9"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div>
-              <div id="q10" class="question">
-                <button onclick="toggleQuestion('a10','q10','b10')" class="faqbutton" id="b10">
-                    Datacamp ne zaman
-                </button>
-                <p id="a10"  class="faqanswer">
-                    11 kasım
-                </p>
-              </div>
-          </div>
         </section>
 
-        <section style="padding-bottom: 0px;">
+        <section style="padding-top: 100px; flex: 1;">
         </section>
+
+
+        <section id="faq" style="background-color: rgb(50, 0, 0); font-size:120%; padding-top: 40px;">
+            <div class="container container-wide" style="width:100%">
+                <div class="accordion" id="accordionExample">
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingOne" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne" style="background-color:white;color:black;font-size:70% ">
+                                    Boğaziçi DataCamp kaç gün sürecek ve nerede düzenlenecek?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Toplam 5 gün sürecek olan etkinliğin ilk 4 günü online, son günü hibrit  olarak gerçekleştirilecektir. Yüz yüze katılım bileti alan katılımcılarımız etkinliğin son gününe Garanti Kültür Merkezi’nde katılabileceklerdir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark" >
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)"> <!-- sorunun arka planı -->
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background-color:white;color:black;font-size:70%"> <!-- butonun rengi-->
+                                    Boğaziçi DataCamp’e nasıl kayıt olabilirim?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);"> <!-- cevabın arka planı -->
+                            <div class="card-body">
+                                Boğaziçi DataCamp’e <a style="color:darkviolet" href="https://biletino.com/tr/e-doj/bogazici-datacamp-veri-bilimi-zirvesi/" target="_blank">Biletino</a> vasıtasıyla kayıt olabilirsiniz.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse8" aria-expanded="false" aria-controls="collapse8" style="background-color:white;color:black;font-size:70%">
+                                    Bilet ücretine neler dahil?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse8" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Bilet ücretine Zirve’ye katılma hakkı, Workshoplara katılma hakkı ve promosyonlara erişim hakkı dahil olmak üzere Boğaziçi DataCamp’in tüm içerikleri dahildir. Sadece 5 Aralık'taki hibrit güne yüz yüze katılım için yüz yüze kategoriden bilet almanız gerekmektedir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" style="background-color:white;color:black;font-size:70%">
+                                    Etkinliğe katılanlara sertifika verilecek mi?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse2" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Zirveye ve workshoplara katılım
+                                sağlayanlar sertifika almaya hak kazanacaklardır.
+                                Sertifikalar ayrı ayrı olacaktır.
+                                Sertifikalar online bir şekilde teslim edilecektir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTw" aria-expanded="true" aria-controls="collapseTw" style="background-color:white;color:black;font-size:70%">
+                                    Zirveye sadece online olarak katılacaklar sertifika alabilecek mi?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseTw" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Online olarak katılacaklar sertifikayla alakalı herhangi bir sorun yaşamayacaktır.
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse7" aria-expanded="true" aria-controls="collapse7" style="background-color:white;color:black;font-size:70%">
+                                    Online katılımcılar networking imkanı bulabilecekler mi?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse7" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Online katılımcılar, Boğaziçi DataCamp’te geçen senelerde de olduğu gibi Discord platformu üzerinden networking yapabileceklerdir.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse6" aria-expanded="true" aria-controls="collapse6" style="background-color:white;color:black ;font-size:70%">
+                                    5 Aralık’tan sonra düzenlenecek olan webinarlara nasıl katılabilirim?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse6" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Boğaziçi DataCamp katılımcıları sene boyunca düzenli olarak düzenlenecek olan webinarlara ücretsiz katılabilirler. Bu süreçteki iletişim mail yoluyla yapılacaktır.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingTwo" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapse5" aria-expanded="true" aria-controls="collapse5" style="background-color:white;color:black;font-size:70%">
+                                    Workshoplara nasıl katılabilirim?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapse5" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Katılımcılar etkinlikten önce gönderilecek olan kayıt sistemi ile workshoplara kaydolabileceklerdir.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card bg-dark">
+                        <div class="card-header" id="headingThree" style="background-image: linear-gradient(115deg, #4d0066 0%, #00004d 100%)">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background-color:white;color:black;font-size:70%">
+                                    Bilet alınca workshoplara da katılabilir miyim?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample" style="background-image: linear-gradient(186deg, #8e4d8c 0%, #9b8920 100%);">
+                            <div class="card-body">
+                                Workshoplar için kotamız olacaktır, etkinlikten önceki hafta
+                                tüm bilet alanlara workshoplar için başvuru formu
+                                gönderilecektir, bu formdaki bilgilerinize göre uygun
+                                workshoplara katılabileceksiniz.
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="card bg-dark"> BUNU KOPYALARKEN BURAYI DEĞİŞTİR YAZAN YERLER YERİNE BİŞEY YAZIN AMA HER SORU SATIRI İÇİN AYNI OLMALI. ÜSTTEKİ ÖRNEKLERE BAKIN
+                        <div class="card-header" id="headingBURAYIDEGISTIRHERSEFERINDE">
+                            <h2 class="mb-0">
+                                <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseBURAYIDEGISTIRHERSEFERINDE" aria-expanded="false" aria-controls="collapseBURAYIDEGISTIRHERSEFERINDE">
+                                    Bilet alınca workshoplara da katılabilir miyim?
+                                </button>
+                            </h2>
+                        </div>
+                        <div id="collapseBURAYIDEGISTIRHERSEFERINDE" class="collapse" aria-labelledby="headingBURAYIDEGISTIRHERSEFERINDE" data-parent="#accordionExample" style="">
+                            <div class="card-body">
+                                Workshoplar için kotamız olacaktır, etkinlikten önceki hafta
+                                tüm bilet alanlara workshoplar için başvuru formu
+                                gönderilecektir, bu formdaki bilgilerinize göre uygun
+                                workshoplara katılabileceksiniz. CV ekleyenlerin önceliği
+                                olacaktır.
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <br/>
+                <p class="lead" style = "text-align: center;">
+                    <a class="btn btn-primary text-wrap" onclick="Tawk_API.maximize()" role="button">
+                        <span>Toplu katılım hakkında bilgi için lütfen iletişim kurunuz</span> </a>
+                </p>
+            </div>
+        </section>
+
         <section>
             <div class="footer-container container">
                 
@@ -229,7 +324,7 @@
                     <img style="width: 30%" src="../assets/compec1white.png" alt="Boğaziçi University IT Club">
                 </a>
                 <p>
-                    © 2022 Boğaziçi Üniversitesi Bilişim Kulübü (Compec) Tüm hakkı saklıdır®
+                    © 2020 Boğaziçi Üniversitesi Bilişim Kulübü (Compec) Tüm hakkı saklıdır®
                     <br>Etkinliğin tüm hakları Compec'e aittir ve etkinliği haber vermeksizin değiştirme yetkisini elinde tutar.
                 </p>
             </div>
