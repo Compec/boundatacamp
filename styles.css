@@ -29,7 +29,7 @@ header.main {
   }
   
   header a.logo img {
-    height: 68px;
+    height: 56px;
   }
   
   .sidenav {
@@ -159,7 +159,8 @@ header.main {
       padding: 10px;
   }
   body{
-      font-family: 'PT Mono', monospace;
+    font-family: "SF Pro Text", "Inter", system-ui, sans-serif;
+    font-size:18px;
   }
   .clearfix::after {
       content: "";
@@ -248,7 +249,7 @@ header.main {
 }
   .why-list{
       list-style: none;
-      padding-left: 10px;
+      padding-left: 0px;
       line-height: 1.2em;
   }
   .why-list li{
@@ -259,6 +260,7 @@ header.main {
       font-size: 1.4em;
       content: '✓';
       padding: 0 2px;
+      
   }
   .program-container{
       box-sizing: border-box;
@@ -452,7 +454,7 @@ header.main {
           display: flex;
           justify-content: space-around;
           align-items: center;
-          padding-top: 200px;
+          padding-top: 100px;
       }
       .header-container .header-text{
           width: 60%;
@@ -691,3 +693,191 @@ header.main {
     padding-bottom: 40px;
   }
   
+  
+  section {
+    
+    /*padding: 96px 0;*/
+    width: 100%;
+    
+  }
+  
+  @media screen and (min-width: 10px){
+    .about-container h2 {
+      
+      font-family: "SF Pro Display", "Inter", system-ui, sans-serif;
+      font-size: 32px;
+      letter-spacing: -0.02em;
+      line-height: 40px;
+      
+      
+    }
+    
+    
+    .about-container {
+      
+      margin: 0 auto;
+      width: auto;
+      max-width: 1288px;
+      padding-left: 40px;
+      padding-right: 40px;
+      
+    }
+    
+    
+    
+    .about-table {
+      
+      color: white;
+      border-radius: 48px;
+      align-items: stretch;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border: 2px solid #1E1E45;
+      
+    }
+    
+    .about-column {
+      flex-shrink: 1;
+      flex-grow: 1;
+      flex-basis: 0;
+      padding: 24px 32px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 16px;
+      border-width: 0px 0px 2px 0px;
+      border-color: #1E1E45;
+      border-style: solid;
+     
+        
+    }
+    
+    .about-column:last-child {
+      
+      border-width: 0px;
+      
+    }
+    
+    .number-tag {
+      
+    
+      font-weight: 500;
+      width: 48px;
+      height: 48px;
+      border-radius: 999px;
+      font-size: 24px;
+      line-height: 32px;
+      background: linear-gradient(127deg, rgba(54,11,189,1) 0%, rgba(19,12,139,1) 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    
+    .about-column p {
+      
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #B0C1E1;
+      
+    }
+    .about-column li{
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: -0.01em;
+      color: #B0C1E1;
+    }
+  }
+
+
+  @media screen and (min-width: 790px){
+  .about-container h2 {
+    
+    font-family: "SF Pro Display", "Inter", system-ui, sans-serif;
+    font-size: 32px;
+    letter-spacing: -0.02em;
+    line-height: 40px;
+    
+    
+  }
+  
+  
+  .about-container {
+    
+    margin: 0 auto;
+    width: auto;
+    max-width: 1288px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+  }
+  
+  
+  
+  .about-table {
+    
+    color: white;
+    border-radius: 48px;
+    align-items: stretch;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 2px solid #1E1E45;
+    
+  }
+  
+  .about-column {
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 24px 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    border-width: 0px 2px 0px 0px;
+    border-color: #1E1E45;
+    border-style: solid;
+   
+      
+  }
+  
+  .about-column:last-child {
+    
+    border-width: 0px;
+    
+  }
+  
+  .number-tag {
+    
+  
+    font-weight: 500;
+    width: 48px;
+    height: 48px;
+    border-radius: 999px;
+    font-size: 24px;
+    line-height: 32px;
+    background: linear-gradient(127deg, rgba(54,11,189,1) 0%, rgba(19,12,139,1) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  
+  .about-column p {
+    
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #B0C1E1;
+    
+  }
+  .about-column li{
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #B0C1E1;
+  }
+}
