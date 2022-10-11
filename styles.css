@@ -919,3 +919,6 @@ header.main {
     color: #B0C1E1;
   }
 }
+.accordion-button{
+  font-weight: bold !important;
+}
