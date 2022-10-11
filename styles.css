@@ -335,6 +335,44 @@ header.main {
       outline: 20px double black;
       margin: 50px 20px;
   }
+  .landing-container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  .partners-amblems-container{
+    width: 100%;
+    margin-top: 16px;
+    flex-basis: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .partners-amblems a{
+  }
+  .partners-amblems-container img {
+    min-width: 64px;
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1px){
+  .header-text{
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 400px){
+    .header-text{
+      font-size: 14px;
+    }
+  }
+  @media screen and (min-width: 960px){
+    .header-text{
+      font-size: 16px;
+    }
+  }
+  @media screen and (min-width: 1350px){
+    .header-text{
+      font-size: 18px;
+    }
+  }
   .partners-container .sponsor img{
       width: 100%;
   }
