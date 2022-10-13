@@ -10,7 +10,7 @@ datacamp 22 asaf tarafından alınan notlar
 
 kayitozel: 2020nin sss sayfası.
 kayıt: 2021in sss sayfası
-datathon:2020den, gizlenmiş
+datathon:2020den, gizlenmiş.
 
 
 21 klasörüne kopyalananlar:
