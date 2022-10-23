@@ -208,7 +208,7 @@ header.main {
       width: 100%;
       height: 100vh;
       height: calc(var(--vh, 1vh) * 100);
-      min-height: 450px;
+      min-height: 800px;
       color: white;
   }
   .header-content{
@@ -237,6 +237,7 @@ header.main {
   }
   .hero-title{
       display: block;
+      padding-left:10px;
   }
   .why-container{
 
@@ -534,7 +535,7 @@ header.main {
           width: 30%;
           margin: 20px auto;
           padding: 4% 0%;
-          border-boo:0.1px solid #ddd;
+          border:0.1px solid #ddd;
       }
       .partners-container h3{
           font-size: 1.6em;
@@ -543,6 +544,7 @@ header.main {
       }
       .hero-title{
           display: block;
+          padding-left:10px;
       }
       .header-logo{
           display: none;
@@ -1034,4 +1036,710 @@ header.main {
 #kuculecek{
   max-width: 90%;
 }
+}
+.program-page{
+  color:black;
+}
+@media screen and (min-width: 5px ){
+    p {
+    font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif ;
+  }
+
+  .program-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .program-container, .section-program-head {
+
+    background-image: none;
+
+
+  }
+
+  .section-program-head  * {
+    color: #070345;
+  }
+
+  .program-head-wrapper {
+    padding: 64px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 416px;
+  } 
+  
+  .program-heading {
+    font-family: 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .program-head-desc {
+    display: flex;
+  }
+
+  .program-head-desc > p, .program-label {
+    text-align: center;
+
+  }
+
+  .program-head-desc > p {
+    font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif ;
+    color: #6D6B7E;
+  }
+
+  .program-head-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1.program-heading {
+    font-size: 48px;
+    line-height: 64px;
+  }
+
+  h2.program-heading {
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .program-label {
+    font-family: 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    letter-spacing: 0.12em;
+    background-color: white;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: 0px 4px 16px rgba(7, 3, 69, 0.08);
+    padding: 2px 8px;
+    border-radius: 99px;
+  }
+
+/* Seperator */
+
+  .program-seperator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 40px 0;
+  }
+
+  /* Section Program */
+
+  .program-container {
+    max-width: 1208px;
+    width: auto;
+  }
+
+  .section-program-plan {
+    background-image: none;
+    background-color: #f7f9fc;
+  }
+
+  .day-card {
+    box-shadow: 0px 120px 120px -80px rgba(76, 86, 115, 0.08);
+    border-radius: 16px;
+    color: #070345;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 40px;
+    padding: 40px 36px 48px 36px;
+    max-width: 1000px;
+    background-color: white;
+  }
+
+
+  .program-label-sec {
+    box-shadow: none;
+  }
+
+  .program-label-purple {
+
+    color: #E203F6;
+  
+  }
+
+  .program-label-yellow {
+
+    color: #E49A2A;
+  
+  }
+
+  .day-card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+  }
+
+
+.day-card-body {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.day-card-row {
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 24px;
+
+}
+
+.event-card {
+
+  flex: 1;
+  border: 1px solid #E4E8EC;
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+
+.event-card::before {
+  content: "";
+  margin: 5px 0;
+  height: 1px;
+  display: block;
+  background-color: #E4E8EC;
+}
+
+.event-card::after {
+  content: "";
+  margin: auto auto 5px auto;
+  height: 1px;
+  display: block;
+  background-color: #E4E8EC;
+}
+
+.event-card-top {
+  padding: 16px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.event-card-heading {
+
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+
+}
+
+.event-card-desc {
+
+  font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  color: #6D6B7E;
+
+}
+
+.event-card-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 8px;
+}
+
+.event-card-details-element {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.event-card-details-icon, .event-card-details-icon>svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.event-card-details-text {
+  font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'salt' on, 'ss01' on, 'cv01' on, 'cv02' on;
+color: #6D6B7E;
+}
+
+
+.event-card-bottom {
+
+  padding: 16px 24px 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 16px;
+
+}
+
+
+.event-card-profile {
+  padding: 4px;
+  width: 96px;
+  height: 96px;
+  border: 1px solid #E6EBF5;
+  border-radius: 134px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-card-about {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+
+}
+
+.event-card-pp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.event-card-profile-card {
+
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+
+}
+
+
+
+
+.event-card-name {
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #070345;
+  font-weight: 500;
+}
+
+.event-card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6D6B7E;
+  gap: 4px;
+}
+
+.event-card-company {
+  font-weight: 400;
+}
+  
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width: 645px){
+
+  p {
+    font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif ;
+  }
+
+  .program-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left:auto;
+    margin-right:auto;
+  }
+
+  .program-container, .section-program-head {
+
+    background-image: none;
+
+
+  }
+
+  .section-program-head  * {
+    color: #070345;
+  }
+
+  .program-head-wrapper {
+    padding: 96px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    max-width: 416px;
+  } 
+  
+  .program-heading {
+    font-family: 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    letter-spacing: -0.02em;
+    font-style: normal;
+    font-weight: 500;
+  }
+
+  .program-head-desc {
+    display: flex;
+  }
+
+  .program-head-desc > p, .program-label {
+    text-align: center;
+
+  }
+
+  .program-head-desc > p {
+    font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif ;
+    color: #6D6B7E;
+  }
+
+  .program-head-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1.program-heading {
+    font-size: 72px;
+    line-height: 96px;
+  }
+
+  h2.program-heading {
+    font-size: 40px;
+    line-height: 48px
+  }
+
+  .program-label {
+    font-family: 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+    letter-spacing: 0.12em;
+    background-color: white;
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    box-shadow: 0px 4px 16px rgba(7, 3, 69, 0.08);
+    padding: 4px 12px;
+    border-radius: 99px;
+  }
+
+/* Seperator */
+
+  .program-seperator {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 64px 0;
+  }
+
+  /* Section Program */
+
+  .program-container {
+    max-width: 1208px;
+    width: auto;
+  }
+
+  .section-program-plan {
+    background-image: none;
+    background-color: #f7f9fc;
+  }
+
+  .day-card {
+    box-shadow: 0px 120px 120px -80px rgba(76, 86, 115, 0.08);
+    border-radius: 16px;
+    color: #070345;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    gap: 64px;
+    padding: 64px 80px 80px 80px;
+    max-width: 1000px;
+    background-color: white;
+  }
+
+
+  .program-label-sec {
+    box-shadow: none;
+  }
+
+  .program-label-purple {
+
+    color: #E203F6;
+  
+  }
+
+  .program-label-yellow {
+
+    color: #E49A2A;
+  
+  }
+
+  .day-card-head {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+  }
+
+
+.day-card-body {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.day-card-row {
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  flex-wrap: wrap;
+  gap: 40px;
+
+}
+
+.event-card {
+
+  flex: 1;
+  border: 1px solid #E4E8EC;
+  border-radius: 12px;
+  overflow: hidden;
+
+}
+
+.event-card::before {
+  content: "";
+  margin: 5px 0;
+  height: 1px;
+  display: block;
+  background-color: #E4E8EC;
+}
+
+.event-card::after {
+  content: "";
+  margin: auto auto 5px auto;
+  height: 1px;
+  display: block;
+  background-color: #E4E8EC;
+}
+
+.event-card-top {
+  padding: 24px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.event-card-heading {
+
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: -0.02em;
+
+}
+
+.event-card-desc {
+
+  font-family: 'Inter', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
+  text-align: left;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.01em;
+
+  color: #6D6B7E;
+
+}
+
+.event-card-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: stretch;
+  gap: 8px;
+}
+
+.event-card-details-element {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.event-card-details-icon, .event-card-details-icon>svg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+
+.event-card-details-text {
+  font-style: normal;
+font-weight: 500;
+font-size: 12px;
+line-height: 16px;
+display: flex;
+align-items: center;
+letter-spacing: -0.01em;
+font-feature-settings: 'tnum' on, 'lnum' on, 'zero' on, 'salt' on, 'ss01' on, 'cv01' on, 'cv02' on;
+color: #6D6B7E;
+}
+
+
+.event-card-bottom {
+
+  padding: 24px 40px 48px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+
+}
+
+
+.event-card-profile {
+  padding: 4px;
+  width: 96px;
+  height: 96px;
+  border: 1px solid #E6EBF5;
+  border-radius: 134px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-card-about {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 8px;
+
+}
+
+.event-card-pp {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.event-card-profile-card {
+
+  flex: 1;
+  min-width: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+
+}
+
+
+
+
+.event-card-name {
+  font-size: 18px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: -0.02em;
+  color: #070345;
+  font-weight: 500;
+}
+
+.event-card-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #6D6B7E;
+  gap: 4px;
+}
+
+.event-card-company {
+  font-weight: 400;
+}
+  
+}
+
+@media screen and (max-width: 850px){
+
+  .day-card-row {
+    flex-direction: column;
+  }
+
 }
