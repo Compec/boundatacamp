@@ -1115,7 +1115,7 @@ header.main {
     font-family: 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     letter-spacing: 0.12em;
     background-color: white;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1373,7 +1373,7 @@ gap: 8px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #6D6B7E;
   gap: 4px;
 }
@@ -1467,7 +1467,7 @@ gap: 8px;
     font-family: 'SF Pro Display', system-ui, -apple-system, 'Helvetica Neue', BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
     letter-spacing: 0.12em;
     background-color: white;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -1725,7 +1725,7 @@ gap: 8px;
   align-items: center;
   text-align: center;
   letter-spacing: 0.08em;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   color: #6D6B7E;
   gap: 4px;
 }
