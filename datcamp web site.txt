@@ -25,3 +25,5 @@ index.html
 main.js
 readme.md
 styles.css
+------------------------------------------------
+dogi's notes
