@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--I am here-->
+    <!-- Facebook Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window,document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '1252146961623423'); 
+        fbq('track', 'PageView');
+        </script>
+        <noscript>
+         <img height="1" width="1" 
+        src="https://www.facebook.com/tr?id=1252146961623423&ev=PageView
+        &noscript=1"/>
+        </noscript>
+        <!-- End Facebook Pixel Code -->
+        <meta content="IE=edge" http-equiv="X-UA-Compatible">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="cache-control" content="max-age=0" />
+        <meta http-equiv="cache-control" content="no-cache" />
+        <meta http-equiv="expires" content="0" />
+        <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+        <meta http-equiv="pragma" content="no-cache" />
+        <link rel="icon" href="../assets/RGB-LogoV4.png">
+        <meta name="description" 
+        content="Boğaziçi DataCamp, veri biliminin iş hayatındaki uygulamalarının anlatıldığı ve ilgili teknolojilerin deneyimlendiği iki günlük atölyeler ve zirveden oluşan bir etkinliktir."
+        >
+        <meta name="keywords" content="boun,bogazici,datacamp,data,science,summit,analytics,and,digital,workshop,business,boğaziçi,camp,veri,bilimi,zirvesi,türkiye,istanbul,en,iyi">
+        <link rel="shortcut icon" type="image/png" href="/2019/assets/logo_icon.png"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
+        <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.10.0/css/bootstrap-select.min.css" rel="stylesheet" />
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+        <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    
+        
+        
+        <link rel="stylesheet" href="../styles.css"/>
+        <title>
+            Boğaziçi DataCamp '22
+        </title>
+    
+        
+        <meta charset="UTF-8">
+    
+        
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128963962-1"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-128963962-1');
+        </script>
+    </head>
+    <body style="
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    ">
+        <!--Start of Tawk.to Script-->
+        <script type="text/javascript">
+            var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+            (function () {
+                var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+                s1.async = true;
+                s1.src = 'https://embed.tawk.to/5d17819f7a48df6da2422b33/1dnaf35q7';
+                s1.charset = 'UTF-8';
+                s1.setAttribute('crossorigin', '*');
+                s0.parentNode.insertBefore(s1, s0);
+            })();
+        </script>
+        <!--End of Tawk.to Script-->
+
+        <header class="main">
+            <div class="containeer">
+                <a href="/" class="logo">
+            
+                    <img src="../assets/RGB-LogoV5.png" alt="Boğaziçi Datacamp">
+            
+                </a>
+            
+                <span id="navToggle" class="nav-toggle" onclick="toggleNav()" style="color: white;"><i id="intoggle" class="fas fa-bars"></i></span>
+                
+            
+                <nav id="nav" class="sidenav">
+            
+                    <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+            
+                    <!-- <a href="#about" data-scroll data-type="navItem" class="animated fast fadeOut active">Bilgi</a> -->
+            
+                    <!--<a href="https://biletino.com/tr/e-doj/bogazici-datacamp-veri-bilimi-zirvesi/" data-type="navItem" class="animated fast fadeOut" target="_blank">Kayıt ol!</a>-->
+
+                    <a href="../program" data-type="navItem" class="animated fast fadeOut">Program</a>
+            
+                    <a href="" data-type="navItem" class="animated fast fadeOut active">Sponsorlar</a>
+            
+                    <a href="../sss" data-type="navItem" class="animated fast fadeOut">SSS</a>
+                    
+                    <a href="/2021" data-type="navItem" class="animated fast fadeOut">DataCamp '21</a>
+
+                    <a href="/2020" data-type="navItem" class="animated fast fadeOut">DataCamp '20</a>
+
+                </nav>
+            </div>
+            
+        </header>
+        
+        <section id="partners" style="padding-top: 100px; flex: 1;">
+            <div class="container container-wide">
+                <h1 style="text-align: center;">Sponsorlarımız ve Partnerlerimiz</h1>
+                <div class="partners-container">
+                    <div class="row" style="align-items: center; display: none;">
+                            <div class="col-12">
+                                <h3>Ana Sponsor</h3>
+                                <hr style="border-color: #000;">
+                            </div>
+
+                        <div class="col-12">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://trendyol.com/">
+                                    <img style="width: 70%;" src="/2022/assets/partners/tygroup.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row" style="align-items: center;">
+                        <div class="col-12">
+                            <h3>Platin Sponsorlar</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">  
+                                <a target="_blank" href="https://www.tazi.ai/">
+                                    <img style="width: 90%;" src="/2022/assets/partners/2021/destekçilerimiz/taziai.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mx-auto" style="align-items: center;">
+                        <div class="col-12">
+                            <h3>Altın Sponsorlar</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/globalmaksimum/?hl=tr">
+                                    <img style="width: 60%;" src="/2022/assets/partners/2021/destekçilerimiz/global_maksimum.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.yildizholding.com.tr/">
+                                    <img style="width: 100%;" src="/2022/assets/partners/2021/destekçilerimiz/Yıldız Holding.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.sisecam.com.tr/">
+                                    <img style="width: 90%;" src="https://media.discordapp.net/attachments/772498337978384424/772547711798870056/sisecam.png?width=532&height=532" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.dogmaalares.com/">
+                                    <img style="width: 90%;" src="/2022/assets//partners/2021/destekçilerimiz/dogma_alares_logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.kkb.com.tr/">
+                                    <img style="width: 90%;" src="/2022/assets//partners/2021/destekçilerimiz/kredi_kayit_burosu.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row align-items-center" style="align-items: center ">
+                        <div class="col-12">
+                            <h3>Ana Partner</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://globalaihub.com/">
+                                    <img style="width: 100%;" src="/2022/assets/partners/2021/destekçilerimiz/gaih.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                        
+
+                    <div class="row align-items-center" style="align-items: center ">
+                        <div class="col-12">
+                            <h3>Stratejik Partnerler</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+                        <div class="row align-items-center">
+                            <div class="col-lg-6 mx-auto">
+                                <div class="sponsor">
+                                    <a target="_blank" href="https://turkiye.ai/">
+                                        <img style="width: 80%;" src="/2022/assets/partners/2021/destekçilerimiz/TRAI_logo_ medium.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mx-auto">
+                                <div class="sponsor">
+                                    <a target="_blank" href="http://deeplearningturkiye.org/">
+                                        <img style="width: 100%;" src="/2022/assets/partners/2021/destekçilerimiz/deep_learning.jpg" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mx-auto">
+                                <div class="sponsor">
+                                    <a target="_blank" href="https://www.datasciencearth.com/">
+                                        <img style="width: 55%;" src="/2022/assets/partners/2021/destekçilerimiz/data_science_earth.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mx-auto">
+                                <div class="sponsor">
+                                    <a target="_blank" href="https://www.kodluyoruz.org/">
+                                        <img style="width: 90%;" src="/2022/assets/partners/2021/destekçilerimiz/kodluyoruz.png" alt="">
+                                    </a>
+                                </div>
+                            </div>
+                            
+                        </div>
+                        <!--
+                        
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://kodluyoruz.org/">
+                                    <img style="width: 70%;" src="https://miro.medium.com/max/3150/2*TZeK0kyHTRHVv3gUi8BtQg.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+
+                        <div class="col-lg-6" style="display: none;">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://kodluyoruz.org/">
+                                    <img style="width: 70%;" src="https://miro.medium.com/max/3150/2*TZeK0kyHTRHVv3gUi8BtQg.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4"style="display: none;">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://kodluyoruz.org/">
+                                    <img style="width: 70%;" src="https://miro.medium.com/max/3150/2*TZeK0kyHTRHVv3gUi8BtQg.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4" style="display: none;">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://kodluyoruz.org/">
+                                    <img style="width: 70%;" src="https://miro.medium.com/max/3150/2*TZeK0kyHTRHVv3gUi8BtQg.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                -->
+                    <div class="row mx-auto" style="align-items: center;">
+                        <div class="col-12">
+                            <h3>Altın Destekçi</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+                        <div class="col-lg-6 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.turktelekom.com.tr/sayfalar/ana-sayfa.aspx">
+                                    <img style="width: 70%;" src="/2022/assets/partners/2021/destekçilerimiz/tt.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    <div class="row mx-auto" style="align-items: center;">
+                        <div class="col-12">
+                            <h3>Destekçiler</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="">
+                                    <img style="width: 70%;" src="/2022/assets/partners/2021/workshop/AWS_logo.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mx-auto" style="align-items: center;">
+                        <div class="col-12">
+                            <h3>Okul Kulüpleri</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/bilkentprogrammingclub/?hl=tr">
+                                    <img style="width: 80%;" src="/2022/assets/partners/2021/kulupler/kulup1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.linkedin.com/company/aucomputersociety/">
+                                    <img style="width: 80%;" src="/2022/assets/partners/2021/kulupler/kulup2.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://koubitek.com/">
+                                    <img style="width: 100%;" src="/2022/assets/partners/2021/kulupler/kulup3.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/ieee.tedu/?hl=tr">
+                                    <img style="width: 120%;" src="/2022/assets/partners/2021/kulupler/kulup4.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/ieeemedipol/">
+                                    <img style="width: 120%;" src="/2022/assets/partners/2021/kulupler/kulup5.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.linkedin.com/company/macsecommunity/">
+                                    <img style="width: 60%;" src="/2022/assets/partners/2021/kulupler/kulup6.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.linkedin.com/company/odtu-yzt/?originalSubdomain=tr">
+                                    <img style="width: 90%;" src="/2022/assets/partners/2021/kulupler/kulup7.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.linkedin.com/company/ieee-bau/">
+                                    <img style="width: 100%;" src="/2022/assets/partners/2021/kulupler/kulup8.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href=" https://www.linkedin.com/company/au-yazgit/">
+                                    <img style="width: 100%;" src="/2022/assets/partners/2021/kulupler/kulup9.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.ieeeankarabilim.org/">
+                                    <img style="width: 100%;" src="/2022/assets/partners/2021/kulupler/kulup10.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                        <div class="col-lg-4">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.kocdigital.com/">
+                                    <img style="width: 70%;" src="/assets/partners/kocdigital.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.tarfin.com/">
+                                    <img style="width: 70%;" src="/assets/partners/tarfin.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="http://principai.com/">
+                                    <img style="width: 70%;" src="https://media.discordapp.net/attachments/772498337978384424/772558350473887744/principai1.png?width=532&height=532" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="http://hevi.ai/">
+                                    <img style="width: 70%;" src="/assets/partners/hevisponsor.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.doktar.com/">
+                                    <img style="width: 70%;" src="https://media.discordapp.net/attachments/772498337978384424/772540418206072862/doktar1.png?width=585&height=585" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://trendify.com.tr/">
+                                    <img style="width: 70%;" src="https://media.discordapp.net/attachments/772498337978384424/772554308339367956/trendify11.png?width=585&height=585" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://temiznetwork.com/">
+                                    <img style="width: 70%;" src="https://media.discordapp.net/attachments/772498337978384424/773119077743984660/temiz.png?width=585&height=585" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row align-items-center" style="align-items: center; display: none;">
+                        <div class="col-12">
+                            <h3>Medya Destekçileri</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+
+                        <div class="col-lg-3 mx-auto" >
+                            <div class="sponsor">
+                                <a target="_blank" href="https://shiftdelete.net/">
+                                    <img style="width: 70%;" src="/assets/partners/shiftdelete.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.webtekno.com/">
+                                    <img style="width: 70%;" src="/assets/partners/webteknoyeni.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://teknoloji.org/">
+                                    <img style="width: 70%;" src="/assets/partners/teknolojiorg.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://hackathonturkiye.com/">
+                                    <img style="width: 70%;" src="/assets/partners/hackathontr.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="row align-items-center" style="align-items: center; display: none;">
+                        <div class="col-12">
+                            <h3>Öğrenci Kulüpleri</h3>
+                            <hr style="border-color: #000;">
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="sponsor mx-auto">
+                                <a target="_blank" href="https://www.instagram.com/sucode_cc/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/SucodeLogo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="sponsor mx-auto">
+                                <a target="_blank" href="https://www.acmhacettepe.com/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/acmlogokare.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4">
+                            <div class="sponsor mx-auto">
+                                <a target="_blank" href="http://www.ieee.metu.edu.tr/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://yazilimbilisim.com/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/BuyabiLogo_02.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://ies.ku.edu.tr/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/ies-logo--100x42.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="http://www.ituieee.com/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/ieeitumavi.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/metustatclub/?hl=en">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/Kırmızı Logo 1.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/agucompsociety/?hl=en">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/kırmızıpng.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://ituacm.com/">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/ACM_LOGO.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="https://www.instagram.com/itudatascience/?hl=en">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/image0.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href=https://clubs.sabanciuniv.edu/tr/c/suieee>
+                                    <img style="width: 100%;" src="/assets/partners/kulupler/sabanciieee.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    -->
+                        <!--
+                        <div class="col-lg-4 mx-auto">
+                            <div class="sponsor">
+                                <a target="_blank" href="">
+                                    <img style="width: 70%;" src="/assets/partners/kulupler/" alt="">
+                                </a>
+                            </div>
+                        </div>
+                            -->
+                    </div>
+
+                    <div class="row" style="align-items: center;" style="align-items: center; display: none;">
+                        <div class="col-12"> 
+                            <a href="mailto:burkay.kinik@compec.org?subject=Boğaziçi%20DataCamp%20Partnership&cc=fatmanur.yaman@leader.compec.org;recepsemih.kanber@leader.compec.org;ahmetcelal.gundogdu@leader.compec.org">
+                                <h3></h3>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- ekledim
+                <h3>Altın Sponsorlar</h3>
+                <hr style="border-color: #000;">
+                <div class="sponsor gold">
+    
+                    <a target="_blank" href="https://www.linkedin.com/company/global-maksimum">
+                        <img src="/assets/partners/GlobalMaksimum.png" alt="">
+                    </a>
+    
+                </div>
+                <div class="sponsor gold">
+    
+                    <a target="_blank" href="https://www.sestek.com/">
+                        <img src="https://www.sestek.com/wp-content/uploads/2017/12/site-logo-XL.png" alt="">
+                    </a>
+    
+                </div>
+    
+                <div class="sponsor gold">
+    
+                    <a target="_blank" href="https://www.garantibbva.com">
+                        <img src=" /assets/partners/garantibbv.png" alt="">
+                    </a>
+    
+                </div>
+                <div class="sponsor gold">
+    
+                    <a target="_blank" href="https://fireflyon.com/">
+                        <img src="https://fireflyon.com/static/media/Logo-dark.ce8311b2.png" alt="">
+                    </a>
+    
+                </div>
+    
+                <h3>İçerik Destekçileri</h3>
+                <hr style="border-color: #000;">
+                <div class="cooperators">
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://www.ing.com.tr/">
+                            <img src="/assets/partners/ING.png" alt="">
+                        </a>
+                    </div>
+
+                </div>
+            -->
+            <!--
+    
+                <h3>Partnerlerimiz</h3>
+                <hr style="border-color: #000;">
+                <div class="cooperators">
+    
+                    <div class="sponsor">
+                        <a target="_blank" href="https://turkiye.ai/">
+                            <img src="/assets/partners/2021/destekçilerimiz/TRAI_logo_ medium.png" alt="">
+                        </a>
+                    </div>
+    
+                </div>
+            -->
+                <!--
+
+                <h3>Çekiliş Destekçisi</h3>
+                <hr style="border-color: #000;">
+                <div class="cooperators">
+    
+                    <div class="sponsor">
+                        <a target="_blank" href="https://datajarlabs.com/">
+                            <img style="background: #004767;" src="http://34.90.67.127/wp-content/uploads/2019/06/05.png" alt="">
+                        </a>
+                    </div>
+                    
+                </div>
+    
+                <h3>Medya Destekçileri</h3>
+                <hr style="border-color: #000;">
+                <div class="row cooperators2" style="display: flex; align-items: center; justify-content: space-around;">
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://cengturkey.com/">
+                            <img src="/assets/partners/CEng.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://mobiler.dev/">
+                            <img src="/assets/partners/mobiler.png" alt="">
+                        </a>
+                    </div>
+                ekledigimin sonu-->
+                    <!-- Add new media supporters -->
+                    <!-- <div class="sponsor gold">
+                        <a target="_blank" href="https://mobiler.dev/">
+                            <img src="/assets/partners/mobiler.png" alt="">
+                        </a>
+                    </div>
+                    
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://mobiler.dev/">
+                            <img src="/assets/partners/mobiler.png" alt="">
+                        </a>
+                    </div> -->
+                <!--ekledim
+                </div>
+                <div class="row cooperators2" style="display: flex; align-items: center; justify-content: space-around;">
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://webtekno.com/">
+                            <img src="https://bountechsummit.com/assets/sponsors/media/webtekno-logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://shiftdelete.net/">
+                            <img src="/assets/partners/shiftdelete.net.png" alt="">
+                        </a>
+                    </div>
+                ekledigimin sonu-->
+                    <!-- Add new media supporters -->
+                    <!-- <div class="sponsor gold">
+                        <a target="_blank" href="https://mobiler.dev/">
+                            <img src="/assets/partners/mobiler.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://mobiler.dev/">
+                            <img src="/assets/partners/mobiler.png" alt="">
+                        </a>
+                    </div> -->
+                <!-- ekledim
+                </div>
+                <h3>İkram Sponsorları</h3>
+                <hr style="border-color: #000;">
+    
+                <div class="row cooperators2" style="display: flex; align-items: center; justify-content: space-around;">
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://www.nescafe.com/tr/">
+                            <img src="/assets/partners/nescafé 3ü1 logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://www.droetker.com.tr/">
+                            <img src="/assets/partners/oetker-logo.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="row cooperators2" style="display: flex; align-items: center; justify-content: space-around;">
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://www.coca-cola.com.tr/">
+                            <img src="/assets/partners/cocacola.png" alt="">
+                        </a>
+                    </div>
+
+                    <div class="sponsor gold">
+                        <a target="_blank" href="https://www.nuribeyciftligi.com/">
+                            <img src="/assets/partners/nbc.png" alt="">
+                        </a>
+                    </div>
+                ekledigimin sonu-->
+                    <!-- Add new media supporters -->
+                    <!-- 
+                    <div class="sponsor gold">
+        
+                            <a   target="_blank" href="https://mobiler.dev/">
+                                <img src="/assets/partners/mobiler.png" alt="">
+                            </a>
+        
+                        </div>
+
+                        <div class="sponsor gold">
+        
+                            <a   target="_blank" href="https://mobiler.dev/">
+                                <img src="/assets/partners/mobiler.png" alt="">
+                            </a>
+        
+                        </div> 
+                    -->
+                
+                <!--</div>ekledim-->
+            </div>
+        
+        </section>
+
+        <section>
+            <div class="footer-container container">
+                
+                <a target="_blank" href="https://compec.org">
+                    <img style="width: 30%" src="../assets/compec1white.png" alt="Boğaziçi University IT Club">
+                </a>
+                <p>
+                    © 2021 Boğaziçi Üniversitesi Bilişim Kulübü (Compec) Tüm hakkı saklıdır®
+                    <br>Etkinliğin tüm hakları Compec'e aittir ve etkinliği haber vermeksizin değiştirme yetkisini elinde tutar.
+                </p>
+            </div>
+            <!--   Compec -->
+        </section>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+        <script>
+            var scroll = new SmoothScroll('a.nav-link', {
+                offset: 80
+            });
+        </script>
+        <script src="../main.js"></script>
+    </body>
+</html>
