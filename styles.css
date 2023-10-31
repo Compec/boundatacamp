@@ -440,7 +440,7 @@ section p {
 
 .partners-container .sponsor.main {
     width: 50%;
-    margin: 20px auto;
+    margin: 25px auto;
 }
 
 .partners-container .sponsor.gold {
@@ -1149,6 +1149,7 @@ section {
 
     .sponsorimgcontainer {
         justify-content: center;
+        margin: 20px
 
     }
 
