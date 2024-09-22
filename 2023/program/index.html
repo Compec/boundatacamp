@@ -1,0 +1,1679 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <script>
+      ! function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+      }(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1252146961623423');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" src="https://www.facebook.com/tr?id=1252146961623423&ev=PageView
+        &noscript=1" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    <meta
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="cache-control" content="max-age=0" />
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <link rel="icon" href="../assets/RGB-LogoV4.png">
+    <meta name="description" content="Boğaziçi DataCamp, veri biliminin iş hayatındaki uygulamalarının anlatıldığı ve ilgili teknolojilerin deneyimlendiği iki günlük atölyeler ve zirveden oluşan bir etkinliktir.">
+    <meta name="keywords" content="boun,bogazici,datacamp,data,science,summit,analytics,and,digital,workshop,business,boğaziçi,camp,veri,bilimi,zirvesi,türkiye,istanbul,en,iyi,yapay,zeka,boğaziçi,makine,öğrenmesi,derin,öğrenme,machine,deep,learning">
+    <link rel="shortcut icon" type="image/png" href="/2019/assets/logo_icon.png" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Mono" rel="stylesheet" />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../styles.css" />
+    <link rel="stylesheet" href="../reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&display=swap" rel="stylesheet">
+    <title> Boğaziçi DataCamp '23 </title>
+    <meta charset="UTF-8">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128963962-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+      gtag('config', 'UA-128963962-1');
+    </script>
+  </head>
+  <body style="
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+        background-color: #f7f9fc;
+    ">
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+      var Tawk_API = Tawk_API || {},
+        Tawk_LoadStart = new Date();
+      (function() {
+        var s1 = document.createElement("script"),
+          s0 = document.getElementsByTagName("script")[0];
+        s1.async = true;
+        s1.src = 'https://embed.tawk.to/5d17819f7a48df6da2422b33/1dnaf35q7';
+        s1.charset = 'UTF-8';
+        s1.setAttribute('crossorigin', '*');
+        s0.parentNode.insertBefore(s1, s0);
+      })();
+    </script>
+    <!--End of Tawk.to Script-->
+    <header class="main" style="background-color: #0a0462;">
+      <div class="containeer">
+        <a href="http://datacamp.boun.edu.tr/" class="logo">
+          <img src="../assets/RGB-LogoV5.png" alt="Boğaziçi Datacamp">
+        </a>
+        <span id="navToggle" class="nav-toggle" onclick="toggleNav()" style="color: white;">
+          <i id="intoggle" class="fas fa-bars"></i>
+        </span>
+        <nav id="nav" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+          <a href="https://www.biletimgo.com/etkinlik/bogazici-datacamp23-4889" data-type="navItem" class="animated fast fadeOut" target="_blank">Kayıt ol!</a>
+          <a href="" data-type="navItem" class="animated fast fadeOut">Program</a>
+          <a href="../sponsorlar" data-type="navItem" class="animated fast fadeOut">Sponsorlar</a>
+          <a href="../../sss" data-type="navItem" class="animated fast fadeOut active">SSS</a>
+          <a href="/2022" data-type="navItem" class="animated fast fadeOut">DataCamp '22</a>
+          <a href="/2021" data-type="navItem" class="animated fast fadeOut">DataCamp '21</a>
+
+        </nav>
+      </div>
+    </header>
+    <section style="padding-top: 100px; flex: 1; background-image: none;"></section>
+    <main class="program-page" style="background-image: none;">
+      <section class="section section-program-head">
+        <div class="program-containerrr">
+          <div class="program-head-wrapper">
+            <div class="program-head-heading">
+              <p class="program-label">BOĞAZİÇİ DATACAMP ‘23</p>
+              <h1 class="program-heading">Programımız</h1>
+            </div>
+            <div class="program-head-desc">
+              <p>Boğaziçi DataCamp '23; Zirve, Workshoplar ve Datathon olmak üzere 3 kısımdan oluşmaktadır.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section section-program-plan">
+        <div class="program-containerrr" >
+          <div class="day-card">
+            <div class="day-card-head">
+              <p class="program-label program-label-sec program-label-purple">Workshop</p>
+              <h2 class="program-heading">2 Kasım Perşembe  </h1>
+            </div>
+            <div class="day-card-body">
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Üretici Çekişmeli Ağlar ile Medikal Görüntü Üretimi</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">19.00-20.30</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/partners/karagoz-ahmet.png" alt="Ahmet Karagöz">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Ahmet Karagöz</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Derin Öğrenme Mühendisi</p>
+                          <p class="event-card-company">Hevi AI</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Paper Classification using Arxiv API and NLP</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">20.30-22.00</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/partners/guldeniz-bektas.png" alt="Güldeniz Bektaş">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Güldeniz Bektaş</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">AI Engineer</p>
+                          <p class="event-card-company">TurkNet</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="day-card-row" style="display:none">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Hands-on Machine Learning Application </h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">20.30 - 22.00</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/omer_cengiz.jpg" alt="Ömer Cengiz">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Ömer Cengiz</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">AI Team Leader</p>
+                          <p class="event-card-company">Global AI Hub</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card" style="visibility: hidden">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Serverless Application Model</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                              </g>
+                            </svg>
+                          </span>
+                        <p class="event-card-details-text">20.30 - 22.00</p>
+                      </div>
+                      <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                            </svg>
+                          </span>
+                        <p class="event-card-details-text">Online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/esra_kayabali.jpg" alt="Esra Kayabalı">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Esra Kayabalı</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Senior Solutions Architect</p>
+                          <p class="event-card-company">AWS</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="program-seperator">
+        <svg width="128" height="32" viewBox="0 0 128 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M12 8V24" stroke="#DADFE4" />
+            <path d="M64 8V24" stroke="#DADFE4" />
+            <path d="M116 8V24" stroke="#DADFE4" />
+          </g>
+        </svg>
+      </div>
+
+      <section class="section section-program-plan">
+        <div class="program-containerrr">
+          <div class="day-card">
+            <div class="day-card-head">
+              <p class="program-label program-label-sec program-label-purple">Datathon</p>
+              <h2 class="program-heading">3 Kasım, Cuma </h1>
+            </div>
+            <div class="day-card-body">
+              <div class="day-card-row">
+                <div class="event-card">
+                    <div class="event-card-top">
+                      <h3 class="event-card-heading">Fugo Games</h3>
+                      <p class="event-card-desc"></p>
+                      <div class="event-card-details">
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                              </g>
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">18.00 - 22.00</p>
+                        </div>
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">Bilgisayar Mühendisliği Binası B4, Kuzey Kampüs</p>
+                        </div>
+                      </div>
+                      <div style="color:#6d6b7e; padding:12px">
+                        Gerçek dünyadan oyun verileri ile gerçekleşecek olan datathonumuza başvurmak ve detaylı bilgi almak için <a href="https://forms.gle/6Lnb8yqQ8Wk9uD1N6">tıklayın!</a>
+                      </div>
+                    </div>
+                    <div class="event-card-bottom">
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/alperen-yildirim.jpeg" alt="Alperen Yıldırım">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Alperen Yıldırım</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Data Science Lead</p>
+                            <p class="event-card-company">Fugo Games</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/oguz-kupeli.jpeg" alt="Oğuz Küpeli">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Oğuz Küpeli</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Level Design Lead</p>
+                            <p class="event-card-company">Fugo Games</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/selin-uyurkulak.jpg" alt="Selin Uyurkulak">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Selin Uyurkulak</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Human Resources Specialist</p>
+                            <p class="event-card-company">Fugo Games</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/omer_baris.jpg" alt="Ömer Barış Erkek">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Ömer Barış Erkek</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Data Scientist</p>
+                            <p class="event-card-company">Fugo Games</p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/nazli-ece.png" alt="Nazlı Ece Aktaş">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Nazlı Ece Aktaş</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Product Data Analyst</p>
+                            <p class="event-card-company">Fugo Games</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+              </div>
+              
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="program-seperator" >
+        <svg width="128" height="32" viewBox="0 0 128 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M12 8V24" stroke="#DADFE4" />
+            <path d="M64 8V24" stroke="#DADFE4" />
+            <path d="M116 8V24" stroke="#DADFE4" />
+          </g>
+        </svg>
+      </div>
+
+      <section class="section section-program-plan">
+        <div class="program-containerrr">
+          <div class="day-card">
+            <div class="day-card-head">
+              <p class="program-label program-label-sec program-label-purple">Workshop</p>
+              <h2 class="program-heading">4 Kasım, Cumartesi </h1>
+            </div>
+            <div class="day-card-body">
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Ask Us Anything</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">13.00 - 14.30</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/oguz-kupeli.jpeg" alt="Oğuz Küpeli">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Oğuz Küpeli</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Level Design Lead</p>
+                          <p class="event-card-company">Fugo Games</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/alperen-yildirim.jpeg" alt="Alperen Yıldırım">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Alperen Yıldırım</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Data Science Lead</p>
+                            <p class="event-card-company">Fugo Games</p>
+                          </div>
+                        </div>
+                      </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-top">
+                      <h3 class="event-card-heading">Büyük Dil Modellerine Giriş</h3>
+                      <p class="event-card-desc"></p>
+                      <div class="event-card-details">
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                              </g>
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">16.30 - 18.00</p>
+                        </div>
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">Online</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-card-bottom">
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/uzay_cetin.png" alt="Uzay Çetin">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Uzay Çetin</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Co-Founder</p>
+                            <p class="event-card-company">Summarify</p>
+                          </div>
+                        </div>
+                      </div>
+
+
+                    </div>
+                  </div>
+
+
+              </div>
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Uçtan Uca Makine Öğrenmesi Modelleri & FastAPI & Docker</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">19.30 - 21.30</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Online</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/yunus_emre.png" alt="Yunus Emre Gündoğmuş">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Yunus Emre Gündoğmuş</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Co-Founder</p>
+                          <p class="event-card-company">Summarify</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card"style="visibility:hidden">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Yemek Molası</h3>
+                    <p class="event-card-desc">Fuaye alanımıza uğramayı unutmayın!</p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">12.30 - 13.00</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="Mola">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="day-card-row"style="display:none">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">AutoML: Under the Hood</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">13.00 - 13.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/emrah_mete.jpeg" alt="Emrah Mete">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Emrah Mete</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Cloud Customer Engineer</p>
+                          <p class="event-card-company">Google</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-top">
+                      <h3 class="event-card-heading">Siber Güvenlikte Makine Öğrenmesi</h3>
+                      <p class="event-card-desc"></p>
+                      <div class="event-card-details">
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                              </g>
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">13.30 - 13.55</p>
+                        </div>
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">Albert Long Hall</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-card-bottom">
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/Cihangir%20Tezcan.jpeg" alt="Cihangir Tezcan">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Doç. Dr. Cihangir Tezcan</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Siber Güvenlik Anabilim Dalı Başkanı</p>
+                            <p class="event-card-company">ODTÜ</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+              </div>
+
+              <div class="day-card-row" style="display:none">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Veri Bilimi ve Veri Güvenliği</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">14.00 - 14.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/omer_cengiz.jpg" alt="Ömer Cengiz">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Ömer Cengiz</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">AI Team Leader</p>
+                          <p class="event-card-company">Global AI Hub</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Yemek Molası</h3>
+                    <p class="event-card-desc">Fuaye alanımıza uğramayı unutmayın!</p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">14.30 - 15.20</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="TBA">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="day-card-row"style="display:none">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Serverless Application Model</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">15.20 - 15.45</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/esra_kayabali.jpg" alt="Esra Kayabalı">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Esra Kayabalı</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Senior Solutions Architect</p>
+                          <p class="event-card-company"> AWS - Amazon Web Services</p>
+                        </div>
+                      </div>
+                    </div>
+
+
+                  </div>
+                </div>
+                <div class="event-card">
+                    <div class="event-card-top">
+                      <h3 class="event-card-heading">Nöromühendislik ve Veri Bilimi</h3>
+                      <p class="event-card-desc"></p>
+                      <div class="event-card-details">
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <g>
+                                <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                              </g>
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">15.50 - 16.15</p>
+                        </div>
+                        <div class="event-card-details-element">
+                          <span class="event-card-details-icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                            </svg>
+                          </span>
+                          <p class="event-card-details-text">Albert Long Hall</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-card-bottom">
+                      <div class="event-card-profile-card">
+                        <div class="event-card-profile">
+                          <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/cagin_cevik.jpeg" alt="Çağın Çevik">
+                        </div>
+                        <div class="event-card-about">
+                          <p class="event-card-name">Çağın Çevik</p>
+                          <div class="event-card-title">
+                            <p class="event-card-position">Laboratory Manager</p>
+                            <p class="event-card-company">Sankara Beyin ve Biyoteknoloji Araştırma Merkezi</p>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+              </div>
+
+              <div class="day-card-row" style="display:none">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Mola</h3>
+                    <p class="event-card-desc">Networking Molası</p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">16.20 - 16.45</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="TBA">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">TBA</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">16.50 - 17.15</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="TBA">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">TBA</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="day-card-row" style="display:none">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Kapanış Konuşması</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">17.20 - 17.45</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="TBA">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="event-card" style="visibility:hidden">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Kapanış Konuşması</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">17.20 - 17.45</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="TBA">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="program-seperator">
+        <svg width="128" height="32" viewBox="0 0 128 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path d="M12 8V24" stroke="#DADFE4" />
+            <path d="M64 8V24" stroke="#DADFE4" />
+            <path d="M116 8V24" stroke="#DADFE4" />
+          </g>
+        </svg>
+      </div>
+      <section class="section section-program-plan">
+        <div class="program-containerrr">
+          <div class="day-card">
+            <div class="day-card-head">
+              <p class="program-label program-label-sec program-label-yellow">Zirve</p>
+              <h2 class="program-heading">5 Kasım, Pazar </h2>
+            </div>
+            <div class="day-card-body">
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Açılış Konuşması</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">10.00 - 10.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/tuna-tugcu.png" alt="Tuna Tuğcu">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Tuna Tuğcu</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Professor</p>
+                          <p class="event-card-company">Boğaziçi University</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Oyun Sektöründe Veri Bilimi</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">10.30 - 10.55</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/alperen-yildirim.jpeg" alt="Alperen Yıldırım">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Alperen Yıldırım</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Data Science Lead</p>
+                          <p class="event-card-company">Fugo Games</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/datathon/oguz-kupeli.jpeg" alt="Oğuz Küpeli">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Oğuz Küpeli</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Level Design Lead</p>
+                          <p class="event-card-company">Fugo Games</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Software On Wheels</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">11.00 - 11.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/Pınar Özveren.jpg" alt="tba">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Pınar Özveren</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Veri Analiz Lideri</p>
+                          <p class="event-card-company">Ford Otosan</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/Uğur Üresin.jpg" alt="tba">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Uğur Üresin</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Üretim & Operasyon Analitiği Ürün Sahibi</p>
+                          <p class="event-card-company">Ford Otosan</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/DavutAkcicek.jpg" alt="Davut Akçiçek">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Davut Ayçiçek</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Veri Mühendisliği Lideri</p>
+                          <p class="event-card-company">Ford Otosan</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Mola</h3>
+                    <p class="event-card-desc">Networking Molası</p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">11.30 - 12.00</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="Esra Kayabalı">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Cloud Computing with AWS</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">12.00 - 12.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/esra_kayabali.jpg" alt="Esra Kayabalı">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Esra Kayabalı</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Senior Solutions Architect</p>
+                          <p class="event-card-company">Amazon Web Services (AWS)</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Large Language Models as Conversational Agents</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">12.30 - 12.55</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/muhammet-aksoy.png" alt="Muhammet Aksoy">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Muhammet Aksoy</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Research Engineer</p>
+                          <p class="event-card-company">ITU Aerospace Research Center</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Data Takımına Kimi Alırsın ?</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">13.00 - 13.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/partners/pinar-oktem.jpg" alt="Pınar Öktem">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Pınar Öktem Dosay</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Head of Data & Business Analytics</p>
+                          <p class="event-card-company">Midas</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Yemek Molası</h3>
+                    <p class="event-card-desc">Fuaye alanımıza uğramayı unutmayın!</p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">13.30 - 14.30</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/RGB-LogoV4.png" alt="logo">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name"></p>
+                        <div class="event-card-title">
+                          <p class="event-card-position"></p>
+                          <p class="event-card-company"></p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Sosyal Bilimlerde Makine Öğrenmesi</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">14.30 - 14.55</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/vesikalik didem.JPG" alt="Didem Gündoğdu">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Didem Gündoğdu</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">CIO & Öğretim Üyesi</p>
+                          <p class="event-card-company">Trendbox & Boğaziçi Üniversitesi</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">AI ve Lowcode: İşlerin Geleceği</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">15.00 - 15.25</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/onurcandan.png" alt="Onur Candan">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Onur Candan</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Founder</p>
+                          <p class="event-card-company">Palamar Technologies</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="day-card-row">
+                <div class="event-card">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">Dashboard Tasarımında Görsel Algı</h3>
+                    <p class="event-card-desc"></p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">15.30 - 15.55</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/deniz_aksoy.jpg" alt="Deniz Aksoy">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Deniz Aksoy</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Eğitmen & Danışman</p>
+                          <p class="event-card-company">Creadata</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                <div class="event-card" style="visibility: hidden;">
+                  <div class="event-card-top">
+                    <h3 class="event-card-heading">TBA</h3>
+                    <p class="event-card-desc">To be announced.</p>
+                    <div class="event-card-details">
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g>
+                              <path d="M12 20C7.5816 20 4 16.4184 4 12C4 7.5816 7.5816 4 12 4C16.4184 4 20 7.5816 20 12C20 16.4184 16.4184 20 12 20ZM12 18.4C13.6974 18.4 15.3253 17.7257 16.5255 16.5255C17.7257 15.3253 18.4 13.6974 18.4 12C18.4 10.3026 17.7257 8.67475 16.5255 7.47452C15.3253 6.27428 13.6974 5.6 12 5.6C10.3026 5.6 8.67475 6.27428 7.47452 7.47452C6.27428 8.67475 5.6 10.3026 5.6 12C5.6 13.6974 6.27428 15.3253 7.47452 16.5255C8.67475 17.7257 10.3026 18.4 12 18.4ZM12.8 12H16V13.6H11.2V8H12.8V12Z" fill="#6D6B7E" />
+                            </g>
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">15.30 - 15.55</p>
+                      </div>
+                      <div class="event-card-details-element">
+                        <span class="event-card-details-icon">
+                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13 18.6749L16.7125 14.9624C17.4467 14.2282 17.9466 13.2927 18.1492 12.2743C18.3517 11.256 18.2477 10.2004 17.8503 9.24111C17.4529 8.28183 16.78 7.46192 15.9167 6.88507C15.0533 6.30821 14.0383 6.00032 13 6.00032C11.9617 6.00032 10.9467 6.30821 10.0833 6.88507C9.21996 7.46192 8.54706 8.28183 8.14968 9.24111C7.75231 10.2004 7.64831 11.256 7.85084 12.2743C8.05337 13.2927 8.55333 14.2282 9.2875 14.9624L13 18.6749ZM13 20.7959L8.227 16.0229C7.283 15.0789 6.64014 13.8762 6.37969 12.5668C6.11925 11.2575 6.25293 9.90026 6.76382 8.66687C7.27471 7.43347 8.13988 6.37927 9.24991 5.63757C10.3599 4.89588 11.665 4.5 13 4.5C14.335 4.5 15.6401 4.89588 16.7501 5.63757C17.8601 6.37927 18.7253 7.43347 19.2362 8.66687C19.7471 9.90026 19.8807 11.2575 19.6203 12.5668C19.3599 13.8762 18.717 15.0789 17.773 16.0229L13 20.7959ZM13 12.7499C13.3978 12.7499 13.7794 12.5919 14.0607 12.3106C14.342 12.0293 14.5 11.6478 14.5 11.2499C14.5 10.8521 14.342 10.4706 14.0607 10.1893C13.7794 9.90798 13.3978 9.74994 13 9.74994C12.6022 9.74994 12.2206 9.90798 11.9393 10.1893C11.658 10.4706 11.5 10.8521 11.5 11.2499C11.5 11.6478 11.658 12.0293 11.9393 12.3106C12.2206 12.5919 12.6022 12.7499 13 12.7499ZM13 14.2499C12.2043 14.2499 11.4413 13.9339 10.8787 13.3713C10.3161 12.8087 10 12.0456 10 11.2499C10 10.4543 10.3161 9.69123 10.8787 9.12862C11.4413 8.56601 12.2043 8.24994 13 8.24994C13.7956 8.24994 14.5587 8.56601 15.1213 9.12862C15.6839 9.69123 16 10.4543 16 11.2499C16 12.0456 15.6839 12.8087 15.1213 13.3713C14.5587 13.9339 13.7956 14.2499 13 14.2499Z" fill="#6D6B7E" />
+                          </svg>
+                        </span>
+                        <p class="event-card-details-text">Albert Long Hall</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="event-card-bottom">
+                    <div class="event-card-profile-card">
+                      <div class="event-card-profile">
+                        <img class="event-card-pp" height="181px" width="139px" src="../assets/konusmacilar/deniz_aksoy.jpg" alt="Deniz Aksoy">
+                      </div>
+                      <div class="event-card-about">
+                        <p class="event-card-name">Deniz Aksoy</p>
+                        <div class="event-card-title">
+                          <p class="event-card-position">Eğitmen</p>
+                          <p class="event-card-company">Creadata</p>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+    <footer style="background-image:none; font-weight: 400; color:#6D6B7E; padding: 64px 0 ;">
+      <div class="footer-container container">
+        <a target="_blank" href="https://compec.org">
+          <img style="margin-bottom: 24px; height: 128px; width: auto;" src="../assets/compec-blue.png" alt="Boğaziçi University IT Club">
+        </a>
+        <p>
+          <p style="font-size: 14px
+        ; line-height: 20px">© 2023Prove that there are 100 consecutive positive integers that are not perfect
+squares. Boğaziçi Üniversitesi Bilişim Kulübü (Compec) Tüm hakkı saklıdır® <br>Etkinliğin tüm hakları Compec'e aittir ve etkinliği haber vermeksizin değiştirme yetkisini elinde tutar. </p>
+        </p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@14/dist/smooth-scroll.polyfills.min.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a.nav-link', {
+        offset: 80
+      });
+    </script>
+    <script src="../main.js"></script>
+  </body>
+</html>

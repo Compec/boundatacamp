@@ -1,0 +1,29 @@
+datathon sil
+etkinlik metnini değiştir
+bize ulaşın kısmı
+compec 2021 yap
+program taslak olacak
+program sonundaki mail kısmı 
+--------------------------------------------
+datacamp 22 asaf tarafından alınan notlar
+
+
+kayitozel: 2020nin sss sayfası.
+kayıt: 2021in sss sayfası
+datathon:2020den, gizlenmiş.
+
+
+21 klasörüne kopyalananlar:
+18,19,20 klasörleri
+assets
+datathon
+kayıt ----- 22 için ismi "sss ile değiştirildi"
+kayıtözel ----gereksiz sayfa olduğu için kopyalamak yerine taşındı (yeni ismi kayitozel-21)
+program
+sponsorlar
+index.html
+main.js
+readme.md
+styles.css
+------------------------------------------------
+dogi's notes
