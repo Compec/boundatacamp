@@ -11,15 +11,14 @@ jobs:
     steps:
     - uses: actions/checkout@master
     - name: FTP-Deploy-Action
-      uses: SamKirkland/FTP-Deploy-Action@4.0.0
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
       with:
         server: ${{ secrets.FTP_SERVER }}
         username: ${{ secrets.FTP_USERNAME }}
         password: ${{ secrets.FTP_PASSWORD }}
         server-dir: ${{ secrets.REMOTE_DIR }}
         local-dir: ${{ secrets.LOCAL_DIR }}
-        args: --timeout 120
-        args: --passive
+ 
 
         dangerous-clean-slate: true
         verbose: true
