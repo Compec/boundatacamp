@@ -22,4 +22,5 @@ jobs:
         args: --passive
 
         dangerous-clean-slate: true
+        verbose: true
         # --delete arg will delete files on the server if you've deleted them in git
