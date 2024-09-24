@@ -4,8 +4,8 @@ on:
       - master
   workflow_dispatch:
 name: Publish Website
-jobs:
-  FTP-Deploy-Action:
+# jobs:
+#  FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
