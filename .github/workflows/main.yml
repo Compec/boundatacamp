@@ -8,9 +8,6 @@ jobs:
   FTP-Deploy-Action:
     name: FTP-Deploy-Action
     runs-on: ubuntu-latest
-<<<<<<< HEAD
-=======
->>>>>>> 28d139b010a3d7c2b2fa90582135c3daf933222f
     steps:
     - uses: actions/checkout@master
     - name: FTP-Deploy-Action
