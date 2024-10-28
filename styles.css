@@ -1058,7 +1058,7 @@ section {
         display: flex;
         flex-direction: column;
         /* justify-content: space-between; Sponsorlar eklenince değiştirilecek. */
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
         flex-basis: 100%;
 
@@ -1117,7 +1117,7 @@ section {
         display: flex;
         flex-direction: row;
         /* justify-content: space-between; Sponsorlar açıklandığında değiştirilecek. */
-        justify-content: center;
+        justify-content: space-between;
         width: 100%;
         flex-basis: 100%;
 
