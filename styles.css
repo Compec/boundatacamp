@@ -1116,7 +1116,6 @@ section {
     .sponsorspage {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; Sponsorlar açıklandığında değiştirilecek. */
         justify-content: space-between;
         width: 100%;
         flex-basis: 100%;
