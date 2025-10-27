@@ -32,53 +32,6 @@ header a.logo img {
     height: 56px;
 }
 
-/* Sayfa arka planı */
-.page-background {
-    background-color: #0a1a3b; /* lacivert */
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 40px;
-  }
-  
-  /* Kartları saran kapsayıcı */
-  .table-container {
-    display: flex;
-    gap: 24px;
-    flex-wrap: wrap; /* Ekran daralınca alta geçsin */
-    justify-content: center;
-  }
-  
-  /* Tek bir kart (tablo görünümünde) */
-  .info-card {
-    background-color: #fff; /* içi beyaz */
-    border-radius: 20px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-    width: 300px;
-    padding: 24px;
-    text-align: center;
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-  
-  /* Hover efekti */
-  .info-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 6px 16px rgba(0,0,0,0.3);
-  }
-  
-  /* Başlık ve metin stilleri */
-  .info-card h2 {
-    color: #0a1a3b;
-    margin-bottom: 12px;
-  }
-  
-  .info-card p {
-    color: #444;
-    margin: 6px 0;
-  }
-
-  
 .sidenav {
     height: 100%;
     width: 0;
@@ -1104,6 +1057,7 @@ section {
     .sponsorspage {
         display: flex;
         flex-direction: column;
+        /* justify-content: space-between; Sponsorlar eklenince değiştirilecek. */
         justify-content: space-between;
         width: 100%;
         flex-basis: 100%;
